@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>http://myp-1080.herokuapp.com/</loc>
+  <lastmod>2020-05-03T03:58:04+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>http://myp-1080.herokuapp.com/about_us</loc>
+  <lastmod>2020-05-03T03:58:04+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://myp-1080.herokuapp.com/Personal_Project</loc>
+  <lastmod>2020-05-03T03:58:04+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://myp-1080.herokuapp.com/E-Portfolio</loc>
+  <lastmod>2020-05-03T03:58:04+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://myp-1080.herokuapp.com/IDU</loc>
+  <lastmod>2020-05-03T03:58:04+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://myp-1080.herokuapp.com/Math</loc>
+  <lastmod>2020-05-03T03:58:04+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://myp-1080.herokuapp.com/English</loc>
+  <lastmod>2020-05-03T03:58:04+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://myp-1080.herokuapp.com/Physics</loc>
+  <lastmod>2020-05-03T03:58:04+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://myp-1080.herokuapp.com/Chemistry</loc>
+  <lastmod>2020-05-03T03:58:04+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://myp-1080.herokuapp.com/Biology</loc>
+  <lastmod>2020-05-03T03:58:04+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://myp-1080.herokuapp.com/History</loc>
+  <lastmod>2020-05-03T03:58:04+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://myp-1080.herokuapp.com/Geography</loc>
+  <lastmod>2020-05-03T03:58:04+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://myp-1080.herokuapp.com/EBM</loc>
+  <lastmod>2020-05-03T03:58:04+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://myp-1080.herokuapp.com/login</loc>
+  <lastmod>2020-05-03T03:58:04+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://myp-1080.herokuapp.com/static/documents/sourcing.pptx</loc>
+  <lastmod>2020-05-03T03:56:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://myp-1080.herokuapp.com/static/documents/more_details.pdf</loc>
+  <lastmod>2020-05-03T03:56:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://myp-1080.herokuapp.com/static/documents/example_report_1.pdf</loc>
+  <lastmod>2020-05-03T03:56:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://myp-1080.herokuapp.com/static/documents/example_report_2.pdf</loc>
+  <lastmod>2020-05-03T03:56:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://myp-1080.herokuapp.com/register</loc>
+  <lastmod>2020-05-03T03:58:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+  
+
+    <!-- Title Page-->
+    <title>MYP1080 Registeration</title>
+
+    <!-- Icons font CSS-->
+    <link href="{{url_for('static', filename='assets/register/vendor/mdi-font/css/material-design-iconic-font.min.css')}}" rel="stylesheet" media="all">
+    <link href="{{url_for('static', filename='assets/register/vendor/font-awesome-4.7/css/font-awesome.min.css')}}" rel="stylesheet" media="all">
+    <!-- Font special for pages-->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i' rel="stylesheet">
+
+    <!-- Vendor CSS-->
+    <link href="{{url_for('static', filename='assets/register/vendor/select2/select2.min.css')}}" rel="stylesheet" media="all">
+    <link href="{{url_for('static', filename='assets/register/vendor/datepicker/daterangepicker.css')}}" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="{{url_for('static', filename='assets/register/css/main.css')}}" rel="stylesheet" media="all">
+    <link rel='icon' type='image/png' href="{{url_for('static', filename='images/logo.png')}}">
+</head>
+
+<body>
+    <div class="page-wrapper bg-gra-03 p-t-45 p-b-50">
+        <div class="wrapper wrapper--w790">
+            <div class="card card-5">
+                <div class="card-heading">
+                    <h2 class="title">MYP1080<sup>o</sup> Registeration</h2>
+                </div>
+                <div class="card-body">
+                    <form method="POST">
+                        <div class="form-row">
+                            <div class="name">Username</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    {{form.username(class_='input--style-5', autocomplete='off', autofocus=true)}}
+                                <ul id=error>
+                                    {% for error in form.username.errors %}
+                                        <li>{{ error }}</li>
+                                    {% endfor %}
+                                </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='form-row'>
+                            <div class='name'>Role</div>
+                            <div class='value'>
+                                <div class="input-group">
+                                    {{ form.role(class_='input--style-5', id='role_selection') }}
+                                </div>
+                                <style>
+                                    #role_selection {
+                                        width: 100%;
+                                    }
+                                </style>
+                                <ul id=error>
+                                    {% for error in form.role.errors %}
+                                        <li>{{ error }}</li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="name">School</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    {{ form.school(class_='input--style-5') }}
+                                </div>
+                                <ul id=error>
+                                    {% for error in form.school.errors %}
+                                        <li>{{ error }}</li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="name">Password</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    {{ form.password(class_='input--style-5') }}
+                                </div>
+                                <ul id=error>
+                                    {% for error in form.password.errors %}
+                                        <li>{{ error }}</li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="name">Confirm Password</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    {{ form.confirm_password(class_='input--style-5') }}
+                                </div>
+                                <ul id=error>
+                                    {% for error in form.confirm_password.errors %}
+                                        <li>{{ error }}</li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        </div>
+                       
+                        <div>
+                        {{ form.submit_button(class_='btn btn--radius-2 btn--red') }}
+                        <style>
+                            #btn
+                            {
+                                margin-left:100px;
+                                width: 75%;
+                                text-align: center;
+                            }
+
+                            #error {
+                                list-style-type: none;
+                                color: red;
+                                text-align: center;
+                                font-family: "Open Sans", "Arial", "Helvetica Neue", sans-serif;
+                                font-weight: 300px;
+                            }
+                        </style>    
+                        </div>
+                        <div id='shreevathsa-padding'class="text-center p-t-90">
+                            <a id='shreevathsa-font-size' class="txt1" href="{{url_for('login')}}">
+                                <strong>Already Have an Account? (Click Here)</strong>
+                            </a>
+                            <style>
+                                #shreevathsa-padding {
+                                    padding-top: 15px;
+                                }
+    
+                                #shreevathsa-font-size {
+                                    font-size: 15px;
+                                    text-decoration: none;
+                                    color: #555;
+                                    padding-bottom: none;
+                                }
+                                .text-center {
+                                    text-align: center;
+                                    padding-bottom: none;
+                                }
+                                .input--style-5 {
+                                    height: 40px;
+                                }
+                            </style>
+    
+                        </div>
+
+                        {{ form.csrf_token }}
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Jquery JS-->
+    <script src="{{url_for('static', filename='assets/register/vendor/jquery/jquery.min.js')}}"></script>
+    <!-- Vendor JS-->
+    <script src="{{url_for('static', filename='assets/register/vendor/select2/select2.min.js')}}"></script>
+    <script src="{{url_for('static', filename='assets/register/vendor/datepicker/moment.min.js')}}"></script>
+    <script src="{{url_for('static', filename='assets/register/vendor/datepicker/daterangepicker.js')}}"></script>
+
+    <!-- Main JS-->
+    <!--<script src="{{url_for('static', filename='assets/register/js/global.js')}}"></script>-->
+
+</body>
+</html>
+<!-- end document-->

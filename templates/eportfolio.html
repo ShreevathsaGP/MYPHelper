@@ -1,0 +1,330 @@
+{% extends "layout.html" %}
+{% block body %}
+    <!-- Header -->
+        <header id="header">
+            <div class="logo"><a href="{{url_for('index')}}">MYP 1080<SUP>o</SUP></a></div>
+            <a href="#menu">Menu</a>
+        </header>
+
+    <!-- Nav -->
+    <nav id="menu">
+        <ul class="links">
+            <li><a href="{{url_for('index')}}">Home</a></li>
+            <li><a href="{{url_for('Humanities')}}">Individuals and Societies</a></li>
+            <li><a href="{{url_for('Sciences')}}">Sciences</a></li>
+            <li><a href="{{url_for('Math')}}">Math</a></li>
+            <li><a href="{{url_for('English')}}">English</a></li>
+            <li><a href="{{url_for('PersonalProject')}}">Personal Project</a></li>
+            <li><a href="{{url_for('EPortfolio')}}">E-Portfolio</a></li>
+            <li><a href="{{url_for('IDU')}}">IDU</a></li>
+            <li><a href="{{url_for('chat_index')}}">Chats</a></li>
+        </ul>
+    </nav>
+
+    <!-- One -->
+        <section id="One" class="wrapper style3">
+            <div class="inner">
+                <header class="align-center">
+                    <p>MYP PROJECTS</p>
+                    <h2>E-Portfolios</h2>
+                </header>
+            </div>
+        </section>
+
+    <!-- Two -->
+        <section id="two" class="wrapper style2">
+            <div class="inner">
+                <div class="box">
+                    <div class="content">
+                        <header class="align-center">
+                            <h2></h2>
+                        </header>
+<h2>Table of Contents </h2>
+<ol class="toc" style="color: #000;">
+<li style="text-decoration: none;"><a href="#introduction">Introduction</a></li>
+<li><a href="#design">Design E-Portfolio</a></li>
+<li><a href="#arts">Arts E-Portfolio</a></li>
+<li><a href="#lang">Second Language E-Portfolio</a></li>
+<li><a href="#downloads"> Downloadable Files</a></li>
+</ol>
+<section class="subject_content" id="introduction">
+<br><br>
+<h3 style="text-align: center;">INTRODUCTION </h3>
+<h4>What is the E-Portfolio?</h4>
+<p style="color: #000">All Block 8 subjects (including design, art, music and PHE) and Second languages do not have an E-assessment. Instead, they are graded through what is known as the E-portfolio. The E-portfolio is a similar project to the MYP Personal Project. The E-portfolio is very different for all the aforementioned subjects.</p>
+<h4>What do you have to do in the E-Portfolio?</h4>
+<p style="color: #000;"> What you have to do in the e-portfolio changes from subject to subject. In the case of the design eportfolio, students have to use their technical skills and knowledge to solve a contemporary problem of concern. For the arts eportfolio, students have to use their knowledge and skills in art or music to create a create and unique composition which depicts the IB declared theme/global context. For the second langugaes eportfolio, students have to complete four in-school tasks which revolve around a common topic. </p>
+
+<h3 id="design" style="text-align: center;">DESIGN E-PORTFOLIO</h3>
+<h4>BRIEF</h4>
+<ul style="color: #000;">
+<li>A project which expects digital design students to use their technical abilities and knowledge to solve a contemporary topic of concern.</li>
+<li>Students may use various means to solve this problem, such as a program, a short film, a game or any other means. </li>
+<li>There are four criteria on the basis of which this project would be graded. </li>
+<li>The student is expected to make a working product, or appropriate evidence for it, and write a report in <strong>40 pages.</strong> </li>
+<li>The report is evidence showing the journey the student embarked while tackling and solving the problem and making their final product.</li>
+</ul>
+
+<h4>MAKING THE REPORT</h4>
+<ol style="color: #000;">
+<li>Criterion A: Inquiring and Analysing </li>
+<ol>
+    <li type="none"><i>Strand 1 --> Explain and justify the need to make a solution for the problem at hand</i></li>
+    <ul>
+        <li>Begin by making a strong and detailed arguement as to why there is a need for solving the problem you are attempting to solve, for example if you wish to make a an app to improve waste management, you need to explain in the first place why the lack of or poort waste management is a problem in the first place.</li>
+        <li >Structure your reasoning for the need for your solution into sections like reasoning from an ethical standpoint, environmental standpoint etc.</li>
+    </ul>
+    <li type="none"><i>Strand 2 --> Identify and prioritize primary and secondary research needed to develop a solution for the problem at hand:</i></li>
+    <ul>
+        <li>Make a plan for your researcch, choose about 6 sources total and have atleast <strong>2-3 Primary sources</strong></li>
+        <li>Make an organized table for the prioritization of your sources, such as the one below: </li>
+        <img src="{{url_for('static', filename='images/pp_priority_table.png')}}">
+        <li>You do not have to show evidence of the research in the report itself, but it has to be placed in the Appendix, which will explored later on.</li>
+        <li>For displaying the primary and secondary research, you can use a table as a summary of the research you have conducted. The table should show the research topic, the type of source used, the type of research and the reason for the research. </li>
+        <li>You must cite all the sources you have used in an appropriate format. It is advised that you use MLA format. </li>
+        <li>You also need to verify your sources in some manner or form. For example you can use the CRAAP evaluation (or any similar method) to evaluate your sources and information. </li>
+        <img width='450px' src='{{url_for("static", filename="images/craap.png")}}'>
+    </ul>
+    <li type="none"><i>Strand 3 -->  Analyse a range of existing products that already relate to the problem at hand</i></li>
+    <ul>
+        <li>You must know analyze around <strong>3 existing solutions</strong> that relate to your problem, or have already partially solved the problem you are addressing.</li>
+            <li>If the solutions you are analyzing are technological in nature, it is recommended to annotate them in this manner:</li>
+            <li><em>The following is an example of analyzing a carbon footpring calculator:</em></li>
+            <img width='450px' src='{{url_for("static", filename="images/footprint_example.png")}}'>
+            <li>Moving on, you now need to analyze these existing solutions to enhance the planning for your product. The best way to do this is to make a chart that lists all the strengths and weakness of the existing solutions leading into the possible oppurtunities and threats for your solution (<em>A SWOT Analysis</em>): </li>
+            <img width='450px'src='{{url_for("static", filename="images/swot.png")}}'>
+    </ul>
+    <li type="none"><i>Strand 4 -->  Develop a detailed design brief, which summarizes the analysis of relevant research concerning the problem at hand</i></li>
+    <ul>
+            <li>You must now make a design brief, that summarizes all of the findings from your research, and using these findings <strong> pitches an idea for the final solution.</strong></li>
+            <li>Throughout the design brief refer to specific results from your research when making a spefication for your final solution</li>
+            <li>At the end of the design brief, you must state briefly what you have in mind for the solution of the problem, and <strong>how though your research you have decided on the materials/resources, time and skills needed for execution of the solution. </strong></li>
+            <li>Finally, you must also explain how the solution you have pitched will help your target audience.</li>
+    </ul></ol>
+<li>Criterion B: Developing Ideas </li>
+<ol>
+    <li type="none">Develop detailed design specifications stating the criteria required for a successful solution adhering to solving the problem at hand</li>
+    <ul>
+        <li><i>Strand 1 --> In a tabular format, such as the one shown below, present the specifications for your product/solution</i> </li>
+            <img src='{{url_for("static", filename="images/specifications.png")}}'>
+            <li>As can be seen in the example above, it is wise to divide the specifications into sections, in order to make your specifications applicable to all aspects of your solution.</li>
+            <li>However, if some of hte sections like Programming are not relevant for your solution, it is best to <strong>leave it out.</strong></li>
+    </ul>
+    <li type="none"><i>Strand 2 -->  Develop a range of applicable ideas for the solution for solving the problem at hand</i></li>
+    <ul>
+        <li>For this strand, it is recommended to make <strong>3 to 5</strong> detialed design ideas for what you want your product to do. For example here is a detialed plan of a carbon footprint calculator application: </li>
+
+            <img id='special_image'height='900px' src='{{url_for("static", filename="images/design_idea_example.png")}}'>
+            <li>As can be seen in the example above, if you are in digital design, and your solution is logic is a computer app/programme/other you can use <strong>flowcharts</strong> to map the logic and clearly show others the completely process of how your product functions.</li>
+            <li>Flowcharts are not only resitrcited to digital design and can be used for some solutions in product/3D design./li>
+            <li>You must have <strong> a minimum of 3 ideas</strong> so that in the next strand you have an ample amount of choices to pick the final design.</li>
+    </li></ul>
+    <li type="none"><i>Strand 3 --> Out of the developed design, select a final design/solution justifying why it has been selected</i></li>
+    <ul>
+            <li>The aim of this strand is for you to choose a final design idea from the 3+ that you made in the previous strand.</li>
+            <li>Begin by making a strength and weakness chart for each of the design ideas you made in the previous strand.</li>
+            <li>Now, through using the strength and weakness charts <strong>choose a final design idea</strong></li>
+            <li>Compare against the design specifications you made in the first strand, justifying your selection by showing <em><strong>no. specifications satisfied/total no. strands</strong></em>. This can be done in the manner shown below:</li>
+            <img src='{{url_for("static", filename="images/strand_justification_example.png")}}'>
+        </ul>
+        <li type="none"><i>Strand 4 --> Develop a more accurate and detailed drawing of the chosen design idea, in addition to outlining the requirements for making it</i></li>
+        <ul>
+            <li>The aim of this strand is to build upon the chosen design idea, and make it as perfect as possible.</li>
+            <li>It is important to remember that the improved final design idea from this strand has to be <strong>substantially different form the raw chosen design idea from previous strands</strong></li>
+            <li>This can be done done; for example if you were making a mobile application --> by making a drawing of the homescreen of the application, while also adding more detail to the already made flowchart.</li>
+            <li>The key things to remember while perfecting the chosen design ideea is to have <strong>more detail and more clarity</strong></li>
+        </ul>
+    </ol>
+    <li>Criterion C: Creating the Solution</li>
+    <ol>
+        <li type="none"><i> Strand 1 --> Construct a logical plan for the making of the product sought to solve the problem at hand</i></li>
+        <ul>
+                <li>For this strand you must make a plan for actually for actually building the chosen product from Criterion B.</li>
+            <li>The best way to do this is to make a table wherin you divide the plan for making your application into steps, and details about the steps, like seen below:</li>
+            <img src='{{url_for("static", filename="images/criterion_c_plan_example.png")}}'>
+            <li>The key things to remember while perfecting the chosen design ideea is to have <strong>more detail and more clarity</strong></li>
+        </ul>
+        <li type="none"><i>Strand 2 --> Demonstrate excellent technical skills (depends on the type of design subject) while making the product sought to do what is it is intended to</i></li>
+        <ul>
+            li>In this strand you have to show evidence of you working on your project, and explain in substantial detail the main aspects of what you did, how you did it and with what you did it.</li>
+            <li>The best way to do this is through <strong>annotating pictures/snippets of your work, whether it is you woodworking, or you coding in order to show that you undestand the different nuances of what you are doing/have done</strong>. Here is an example of how to annotate code (can also be applied to product design, in a similar manner):</li>
+            <img src='{{url_for("static", filename="images/criterion_c_annotating.png")}}'>
+            <li>It is important to remember that the annotations you make of your work, need to be clear with the message that <strong>You understand the work you have done enough that you can actually explain it/teach it to others.</strong></li>
+        </ul>
+        <li type="none"><i> Strand 3 --> Follow the constructed plan to create the chosen solution, which functions exactly as intended</i></li>
+        <ul>
+            <li>This strand is very simple <strong>if you have actually done the work you had planned in strand one.</strong></li>
+            <li>If your solution is a physical functioning product or a computer programme, you can again have tables or diagrams that explain the differents functions that it has:</li>
+            <li>But you can also have videos of the product working, with commentary (to again show that you understand what you have made). However these videos <strong>cannot be longer than x minutes</strong></li>
+        </ul>
+        <li type="none"><i>Strand 4 --> Fully justify changes made to the chosen design and plan when making the product sought to solve the problema at hand</i></li>
+        <ul>
+            <li>Begin with <strong>listing the major changes that you made to the plan, the plans that did not concern time, but the actual solution itself</strong>. (for exampe if you were planning to make a laptop application but changed it mid-way to a mobile only applicatioin.). Also mention the reason why you made this change, and how much time it cost you by making it.</li>
+            <li>Next mention minor changes to the plan. The changes in the time that it took you to execute a step in the plan, or the date that you did it on. For these you can simply list how much longer or shorter it took you to do the step, why it did, and how it affected the solution overall.</li>
+            <li>When showing the changes you made to the plan, it is important to be concise and only mention relevant changes as <strong>exceeding the page limit of 40 pages will result in a deduction of your grades.</strong></li>
+        </ul>
+    </ol>
+    <li> Criterion D: Evaluating</li>
+    <ol>
+        <li type="none"><i>Strand 1 --> Design detailed and relevant testing methods, which generate data, to measure the success of my product/solution</i></li>
+            <ul>
+            <li>This strand prompts you to test to the success of you through different methods.</li>
+            <li>The easiest methods are by designing surveys that ask the target audience about if different success aspects were met by your solution. This can be done through google forms and shown in a table like the one below:</li>
+            <img src='{{url_for("static", filename="images/criterion_d_survey.png")}}'>
+            <li>It is recommended to <strong>atleast have 3 testing methods</strong>. And here are some other good ones</li>
+            <li type='none'>
+                <ol>
+                    <li>Performance testing</li>
+                    <li>FUC testing --> Functionality, User Interface & Compatibility testing</li>
+                    <li>Interviews with members of target audience</li>
+                </ol>
+            </li>
+        </ul>
+        <li type="none"><i>Strand 2 -->  Critically evaluate the success of the product/solution against the design specifications</i></li>
+            <ul>
+            <li>This strand will be easy <strong>if you have done the previous strand correctly and collected ample amount of data.</strong></li>
+            <li>In order to evaluate the success of your application against the specifications you made in Criterion B, you can utilize a table such as the one below:</li>
+            <img src='{{url_for("static", filename="images/specification_evaluate.png")}}'>
+            <li>In this table, you can use <strong>data points and graphs from your survey, performance test and others to to prove if a specification is satisfied</strong> or not (<strong> As seen above </strong>)</li>
+        </ul>
+        <li type="none"><i>Strand 3 --> Suggest ways how the product/solution can be improved and justify the changes made</i></li>
+        <ul>
+            <li>Similar to the previous strand you can use feedback you got from surveys or interviews from the first strand in order to clearly state and support the improvements yoru solution needs.</li>
+            <li>You can use a table like this to present the improvements in a clear and concise manner:</li>
+            <img src='{{url_for("static", filename="images/criterion_d_improvements.png")}}'>
+            <li>In the end you can provide a brief summary of what major aspects can be improved in your solution.</li>
+        </ul>
+        <li type="none"><i>Strand 4 --> Explain the impact of the product/solution on the client/target audience</i></li>
+        <ul>
+            <li>This strand requires to explain the impact that you made on your target audience with your product/solution?</li>
+            <li>You can complete this strand, by answering the following questions --> </li>
+            <li type='none'>
+                <ol>
+                    <li>To what extent was the client's problem solved?</li>
+                    <li>To what extent was the design brief met?</li>
+                    <li>Did the solution improve the situation of the target audience? If yes, how?</li>
+                </ol>
+            </li>
+        </ul>
+    </ol>
+</ol>
+</ol>
+<li type="none" style="color: #000">While answering the above questions it is <strong>important to use evidence from throughout your report</strong>, whether it be evidence of the product working from Criterion C, or proof that the target audience's problem was solved from Criterion D surveys</li>
+<br><br>
+<h4>APPENDIX</h4>
+<p style="color: #000; ">What do you indlude in the appendix?</p>
+<ul style="color: #000">
+<li>Any code, images, or non-essential elements to the report that are used to substantiate claims made in the report, and do not make any statements in themselves</li>
+<li>Any charts, like Know Want Learn charts, that would otherwise take too much space on the 40 page limit report.</li>
+<li>Evidence of outcome, development and planning.</li>
+<li>What you attach in the Appendix will not be graded, so be mindful with the fact that they are there to substantiate any claims you made in the actual report, and do not have any integrity by themselves.</li>
+</ul>
+<h4 style="color: #000">SUBMISSION</h4>
+        <p style="color: #000">How do you submit the eportfolio?</p>
+        <ul style="color: #000">
+            <li>You first submit your report itself (40 page limit), through an online or written medium.</li>
+            <li>You then attach an appendix to the submission, which contains all non-essential elements (will not be graded).</li>
+            <li>You then have a max 4 minute video, physical submission, (sometimes applicable picture submission) of your final product/solution.</li>
+            <li>These three must be seperated separately, and if incomplete will cause a huge loss in your grades.</li>
+        </ul>
+<h3 id="arts" style="text-align: center;">ARTS E-PORTFOLIO</h3> 
+<h4>BRIEF</h4>
+<ul style="color: #000">
+<li>The eportfolio for all arts (including music and visual art) is completely different from the design eportfolio</li>
+<li>Unlike the design eportfolio, where students had to utilise their technical skills and knowledge to solve a problem, in the arts eportfolio, students must create, present or perform art that displays a message under the IB declared theme. </li>
+<li>Below is how the design cycle differs for art and music.</li>
+<li type='none'><img id='art' width='450px' src='{{url_for("static", filename="images/arts_cycle.png")}}'></li>
+</ul>
+<br>
+
+<h4>MAKING THE REPORT</h4>
+<ol style="color: #000;">
+<li>Presentation (Criterion A and D)</li>
+<ul>
+    <li type="none">An individual research presentation using concepts and subject-specific terminology of --> 
+        <ul>
+            <li>Art that demonstrates the IB declared context/theme including research about the artist(s)</li>
+            <li>The critical analysis of one or two examples of the art form</li>
+        </ul>
+    </li>
+</ul>
+<li>Development (Criterion B and C)</li>
+<ul>
+    <li type="none">A selection of process journal extracts to show --> </li>
+    <ul>
+            <li>The development of the student’s artistic intention</li>
+            <li>The exploration of artistic ideas</li>
+            <li>Skills and techniques acquired during the progression of the work must be shown at three stages: near the start, the middle and towards the end of the development process.</li>
+        </ul>
+    </ul>
+<li>Outcome (Criterion B)</li>
+<ul>
+    <li type="none">Here is what the outcome entails:</li>
+        <ul>
+            <li>The student’s artwork created, presented or performed that demonstrated the IB declared context/theme</li>
+        </ul>
+    </ul>
+<li>Commentary (Criterion D)</li>
+<ul>
+    <li type="none">A commentary that includes:</li>
+        <ul>
+            <li>Evidence of the student’s ability to construct meaning and transfer learning into their artwork</li>
+            <li>A critique of the student’s own artwork including its ability to demonstrate the IB declared context</li>
+        </ul>
+    </ul>
+</ol>
+
+<br>
+<h3 id="lang" style="text-align: center;">SECOND LANGUAGE E-PORTFOLIO</h3>
+<h4>What do you do in the second language eportfolio?</h4>
+<p style="color: #000">Unlike the design and art eportfolios, the tasks for the second language eportfolios cannot be done at home. So they are done in school, under teacher supervision. Due to this, all the content for the eportfolio will be taught in class by your respective second language teacher(s)</p>
+<h4>What are the tasks for the second language eportfolio?</h4>
+<ul>
+<li><p style="color: #000">As you all know, there are four criterion in second language, and they are --> </p></li>
+<ol style="color: #000">
+<li>Criterion A: Listening</li>
+<ul>
+    <li>As the name suggests, this is the criteria where students have to comprehend and answers questions based on an audio or video. These questions can be objective or subjective. </li>
+</ul>
+<li>Criterion B: Reading</li>
+<ul>
+    <li>This is the criteria where students have to comprehend passages and answer a series of questions. These questions can be objective or subjective. </li>
+</ul>
+<li>Criterion C: Speaking</li>
+<ul>
+    <li>This is where students are graded for their pronounciation and fluency while speaking the langugae</li>
+    <li>For the eportfolio, students will be provided with 50 guiding questions before hand, for which they can prepare answers at home and get them reviewed by their teacher</li>
+    <li>Students will be asked questions in a private, recorded, face-to-face oral session that revolve around the theme of the provided guiding questions</li>
+</ul>
+<li>Criterion D: Writing</li>
+<ul>
+    <li>This is the criteria where students are provided with a theme and a certain format (a blog, letter, poster, or any others) and the students must write a response in the chosen langugae</li>
+    <li>Here, students are graded on their grammar, word choice, and flow</li>
+</ul>
+</ol>
+<li style="color: #000;">The teachers will conduct <strong> as many tasks as they like </strong> for each criterion. While one teacher may conduct one task for each criterion, another might conduct three. This decision is made by the teacher. If multiple tasks are conducted for each criterion, then the best of the scores is considered. </li>
+<li style="color: #000"> The best way to preapre for the second language eportfolio, would be to pay attention and take diligent notes in your second language classes, and reviewing your previous years vocabularly.</li> 
+
+<BR>
+<h3 id="downloads" style="text-align: center;">DOWNLOADBALE FILES</h3>
+<ul>
+    <li><a id="download" href="{{url_for('static', filename='documents/eport_1.pdf')}}" download = "e-portfolio_sample_1.pdf"><img id="icon" height="30px" width="25px" src="{{url_for('static', filename='images/pdf_logo.png')}}">E-Portfolio Sample 1</a></li>
+</ul>
+    <!-- The following is how to do quiz-->
+    <!--<button id='quiz_button' onclick="window.location.href='{{url_for('quiz', quiz_data=questions)}}'">Quiz for Development Testing</button>-->
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- Footer -->
+        <footer id="footer">
+            <div class="container">
+            </div>
+            <div class="copyright">
+                &copy; MYP1080
+            </div>
+        </footer>
+{% endblock %}

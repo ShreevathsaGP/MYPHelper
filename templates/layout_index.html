@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>MYP 1080</title>
+		<meta name="google-site-verification" content="DpRBlb7q-BmUmevkRr2MtyaB9nWvUh4hwW2FVY-Ie60" />
+		<meta name='description' description='The perfect guide for all students studying in International Baccalaureate(IB). This website entails dedicated specific guides on Personal Project, Core Subjects, Design and a designated chat room for anything MYP or IB to meet likeminded individuals.'/>
+		<meta nam='keywords' content='IB, International Baccalaureate, myp, myp-1080, myp 1080, middle years programme, middle years program, international education, myp akhil, myp shreevathsa, myp indus, ib students, personal project, eportfolio, myp guide, myp help, myp chat, myp aid, myp 1080 shreevathsa, myp 1080 akhil, myp 1080 india'/>
+		<meta name='robots' content='index, follow'>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<script type="text/javascript" src="{{ url_for('static' , filename='skel.min.js') }}"></script>
+		<script type="text/javascript" src="{{ url_for('static' , filename='util.js') }}"></script>
+		<script type="text/javascript" src="{{ url_for('static' , filename='jquery.min.js') }}"></script>
+		
+		<script type="text/javascript" src="{{ url_for('static' , filename='main.js') }}"></script>
+		
+		<link rel="stylesheet" href="{{ url_for('static' , filename='main.css') }}" />
+		<link rel='icon' type='image/png' href="{{url_for('static', filename='images/logo.png')}}">
+	</head>
+	<body class="landing">
+
+		<!-- Header -->
+			<header id="header" class="alt">
+				<h1><a style='display: inline-block'href="/">MYP 1080<sup>o</sup></a></h1>
+				<h1 class="login-info">
+					<h1 style='display: inline-block'></h1>
+					<a id='user-info' style='display: inline-block'>{{username}} | {{login_status}}</a>
+					<style>
+						@media screen and (max-width: 600px) {
+							#user-info {
+								font-size: 3.5vw;
+							}
+						}
+					</style>
+				</h1>
+				<script>
+					login_status = document.getElementById('user-info');
+					
+					login_text = login_status.innerHTML
+					console.log(login_status.innerHTML);
+
+					verdict = login_text.search("Out")
+					console.log(verdict)
+					
+					// Deciding if link works as a logout or login
+					if (verdict != -1) {
+						login_status.href = "{{url_for('logout')}}"
+					} else {
+						login_status.href = "{{url_for('login')}}"
+					}
+
+				</script>
+			</header>
+
+		<!-- Nav -->
+		<!--
+			<nav id="nav">
+				<ul class="links">
+					<li><a href="/">Home</a></li>
+					<li><a href="/IDU">IDU</a></li>
+					<li><a href="/E-Portfolio">E-Portfolio</a></li>
+					<li><a href="/Personal_Project">Personal Project</a></li>
+				</ul>
+		
+			</nav>
+		-->
+
+		<!-- Scripts -->
+
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+
+
+			{% block body %}
+    		{% endblock %}
+	</body>
+</html>

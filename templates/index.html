@@ -1,0 +1,195 @@
+<!DOCTYPE HTML>
+{% extends "layout_index.html" %}
+{% block body %}
+
+		<!-- Banner -->
+			<section id="banner">
+				<img height= '140px' width='140px'src="{{url_for('static', filename='images/logo.png')}}">
+				<h2>MYP 1080<sup>o</sup></h2>
+				<em><p style='font-size: 18px; font-weight: 500;'>BY: {{by_statement}}</p></em>
+				<p>The Perfect guide for all MYP students</p>
+				<ul class="actions">
+					<li><a href="/about_us" class="button big special">About Us</a></li>
+					<li><a href="/chat_index" class="button big special">Go to chats</a></li>
+				</ul>
+			</section>
+
+		<!-- One -->
+			<section id="one" class="wrapper style1">
+				<div class="inner">
+					<article style='border-radius: 10px;' class="feature left">
+						<span class="image"><img id='pp' src="{{url_for('static' , filename='images/pp.png') }}" alt="" /></span>
+						<style>
+							#pp
+                            {
+								margin: 10px auto 20px;
+								display: block;
+                                height: 230px;
+                                width: 260px;
+                            }
+						</style>
+						<div class="content">
+							<h2>Personal Project</h2>
+							<p>A practical exploration which consolidates the students learning throughout the Middle Year Programme.</p>
+							<ul class="actions">
+								<li>
+									<a href="/Personal_Project" class="button alt">GET STARTED</a>
+								</li>
+							</ul>
+						</div>
+					</article>
+					<article style='border-radius: 10px;' class="feature right">
+						<span class="image"><img id='eport' src="{{ url_for('static' , filename='images/eport.png') }}" alt="" /></span>
+						<style>
+							#eport
+                            {
+                                margin: 10px auto 20px;
+								display: block;
+                                height: 300px;
+                                width: 275px;
+                            }
+						</style>
+						<div class="content">
+							<h2>E-Portfolio</h2>
+							<p>Innovative assesment for Design, Art or PHE, to show progress made through the Middle Year Programme.</p>
+							<ul class="actions">
+								<li>
+									<a href="/E-Portfolio" class="button alt">GET STARTED</a>
+								</li>
+							</ul>
+						</div>
+					</article>
+					<article style='border-radius: 10px;' class="feature left">
+						<span class="image"><img id='idu' src="{{ url_for('static' , filename='images/idu.png') }}" alt="" /></span>
+						<style>
+							#idu
+                            {
+								margin: 10px auto 20px;
+								display: block;
+                                height: 250px;
+                                width: 305px;
+                            }
+						</style>
+						<div class="content">
+							<h2>Inter Disciplinary Unit</h2>
+							<p>IDU, the integration of core subjects to enhance whole learning and interconnected understanding of concepts.</p>
+							<ul class="actions">
+								<li>
+									<a href="/IDU" class="button alt">GET STARTED</a>
+								</li>
+							</ul>
+						</div>
+					</article>
+				</div>
+			</section>
+
+		<!-- Two -->
+			<section id="two" class="wrapper special">
+				<div class="inner">
+					<header class="major narrow">
+						<h2>MYP Core Subjects</h2>
+						<p>Click on the variety of subjects for their respective guides</p>
+					</header>
+					<div class="image-grid">
+						<a id='index_subject' href="/Math" class="image"><img id='subject-image' height='100%' src="{{url_for('static' , filename='images/pic03.png') }}" alt="" /></a>
+						<a id='index_subject'  href="/English" class="image"><img id='subject-image' height='100%' src="{{url_for('static' , filename='images/pic04.png') }}" alt="" /></a>
+						<a id='index_subject'  href="/Sciences#physics" class="image"><img id='subject-image' height='100%' src="{{url_for('static' , filename='images/pic05.png') }}" alt="" /></a>
+						<a id='index_subject'  href="/Sciences#chem" class="image"><img id='subject-image' height='100%' src="{{url_for('static' , filename='images/pic06.png') }}" alt="" /></a>
+						<a id='index_subject'  href="/Sciences#bio" class="image"><img id='subject-image' height='100%' src="{{url_for('static' , filename='images/pic07.png') }}" alt="" /></a>
+						<a id='index_subject'  href="/Humanities#history" class="image"><img id='subject-image' height='100%' src="{{url_for('static' , filename='images/pic08.png') }}" alt="" /></a>
+						<a id='index_subject'  href="/Humanities#geography" class="image"><img id='subject-image' height='100%' src="{{url_for('static' , filename='images/pic09.png') }}" alt="" /></a>
+						<a id='index_subject'  href="/Special" class="image"><img id='subject-image' height='100%' src="{{url_for('static' , filename='images/pic10.png') }}" alt="" /></a>
+					</div>
+					<style>
+						#subject-image {
+							border: solid;
+							border-width: 1px;
+							border-color:#1E2832;
+							border-radius: 20px;
+						}
+					</style>
+					<!--
+					<ul class="actions">
+						<li><a href="#" class="button big alt">Tempus Aliquam</a></li>
+					</ul>
+					-->
+				</div>
+			</section>
+
+		<!-- Three -->
+			<section id="three" class="wrapper style3 special">
+				<div class="inner">
+					<header class="major narrow">
+						<h2>Do You Have Doubts?</h2>
+						<p>You can talk to a subject specific mentor who can answer all your doubts</p>
+					</header>
+					<ul class="actions">
+						<li><a href="{{url_for('chat_index')}}" id='chat_button' class="button alt"> Chat With mentor</a></li>
+						<style>
+							#chat_button {
+								background: #51BAA4;
+							}
+						</style>
+					</ul>
+				</div>
+			</section>
+
+		<!-- Four -->
+			<network host="smtp.gmail.com" enableSsl="true" ... />
+			<section id="four" class="wrapper style2 special">
+				<div class="inner">
+					<header class="major narrow">
+						<h2>CONTACT US</h2>
+						<p>Send us feedback regarding the content and or features on the website</p>
+					</header>
+					<form id='email-feedback-form' method="POST">
+						<div class="container 75%">
+							<div class="row uniform 50%">
+								<div class="6u 12u$(xsmall)">
+									<input id='feedback-input-name' name="name" placeholder="Name" type="text" required/>
+								</div>
+								<div class="6u$ 12u$(xsmall)">
+									<input id='feedback-input-email' name="email" placeholder="Email" type="email" required/>
+								</div>
+								<div class="12u$">
+									<textarea id='feedback-input-message' name="message" placeholder="Message" rows="4" required></textarea>
+								</div>
+							</div>
+						</div>
+						<ul class="actions">
+							<li><input type="submit" class="special" value="Submit" /></li>
+							<li><input type="reset" class="alt" value="Reset" /></li>
+						</ul>
+					</form>
+				</div>
+			</section>
+			<script src="https://smtpjs.com/v3/smtp.js"></script>
+			<script src="{{url_for('static', filename='email_bot.js')}}"></script>
+
+			<footer id="footer">
+				<div class="inner">
+					<!--
+					<ul class="icons">
+						<li><a href="#" class="icon fa-facebook">
+							<span class="label">Facebook</span>
+						</a></li>
+						<li><a href="#" class="icon fa-twitter">
+							<span class="label">Twitter</span>
+						</a></li>
+						<li><a href="#" class="icon fa-instagram">
+							<span class="label">Instagram</span>
+						</a></li>
+						<li><a href="#" class="icon fa-linkedin">
+							<span class="label">LinkedIn</span>
+						</a></li>
+					</ul>
+					-->
+					<ul class="copyright">
+						<li>&copy; MYP 1080<sup>o</sup></li>
+					</ul>
+				</div>
+			</footer>
+			
+			
+{% endblock %}
+

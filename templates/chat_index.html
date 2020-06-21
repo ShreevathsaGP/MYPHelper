@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+			integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+			crossorigin="anonymous"
+			/>
+		<link rel="stylesheet" href="{{url_for('static', filename='chat.css')}}" >
+		<link rel="icon" href="{{url_for('static', filename='images/chat_icon.png')}}">
+		<title>MYP1080 CHAT</title>
+	</head>
+	<body>
+		<div class="join-container">
+			<header class="join-header">
+				<a style='color: white' href='{{url_for("index")}}'><h1>MYP1080<SUP>o</SUP> CHAT</h1></a>
+				<em><strong><p style='color: orange'>(Cick on app name to RETURN HOME)</p></strong></em>
+			</header>
+			<main class="join-main">
+                <div class="form-control">
+                    <label for="room">Select the room you wish to join: </label>
+                    <select id='room_selections' name="room" id="room">
+                        {% for room in available_rooms %}
+                            <option href='{{url_for("chat", room="{{room}}")}}' value='{{room}}' selected="selected">{{room}}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <button onclick='redirect_chat()' id='chat_selection' type="button" class="btn">Join Chat</button>
+                <script>
+                    function redirect_chat() {
+                        let redirect_href = document.getElementById('room_selections').options[document.getElementById('room_selections').selectedIndex].value
+                        console.log(redirect_href)
+                        window.location.href = '/chat/' + redirect_href;
+                    }
+                </script>
+			</main>
+		</div>
+	</body>
+</html>

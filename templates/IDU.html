@@ -1,0 +1,174 @@
+{% extends "layout.html" %}
+{% block body %}
+
+	<!-- Header -->
+		<header id="header">
+			<div class="logo"><a href="{{url_for('index')}}">MYP 1080<SUP>o</SUP></a></div>
+			<a href="#menu">Menu</a>
+		</header>
+
+	<!-- Nav -->
+	<nav id="menu">
+		<ul class="links">
+			<li><a href="{{url_for('index')}}">Home</a></li>
+			<li><a href="{{url_for('Humanities')}}">Individuals and Societies</a></li>
+			<li><a href="{{url_for('Sciences')}}">Sciences</a></li>
+			<li><a href="{{url_for('Math')}}">Math</a></li>
+			<li><a href="{{url_for('English')}}">English</a></li>
+			<li><a href="{{url_for('PersonalProject')}}">Personal Project</a></li>
+			<li><a href="{{url_for('EPortfolio')}}">E-Portfolio</a></li>
+			<li><a href="{{url_for('IDU')}}">IDU</a></li>
+			<li><a href="{{url_for('chat_index')}}">Chats</a></li>
+		</ul>
+	</nav>
+
+	<!-- One -->
+		<section id="One" class="wrapper style3">
+			<div class="inner">
+				<header class="align-center">
+					<p>MYP Subjects</p>
+					<h2>Inter Disciplinary Unit (IDU)</h2>
+				</header>
+			</div>
+		</section>
+
+	<!-- Two -->
+		<section id="two" class="wrapper style2" style="color: #000;">
+			<div class="inner">
+				<div class="box">
+					<div class="content">
+						<header class="align-center">
+						</header>
+<h2>Table of Contents</h2>
+<ol id='table_of_contents' type="A">
+    <li><a href='#introduction'>Introduction</a></li>
+    <li><a href='#questions'>Questions and Answers</a></li>
+    <li type='none'>
+        <ul style='margin-left: 0%;'>
+            <li><a href='#how1'>How do the IDU examinations work? </a></li>
+            <li><a href='#how2'>How to prepare for IDU examinations? </a></li>
+        </ul>
+    </li>
+    <li><a href='#criterions'>Criterions for IDU Exam</a></li>
+    <ul style='margin-left: 0%;'>
+        <li><a href='#a'>Criterion A: Disciplinary Grounding </a></li>
+        <li><a href='#b'>Criterion B: Synthesising </a></li>
+        <li><a href='#c'>Criterion C: Communication </a></li>
+        <li><a href='#d'>Criterion D: Reflection </a></li>
+    </ul>
+</ol>
+</header>
+<section class='subject_content' id='introduction'>
+<h3>INTRODUCTION</h3>
+<strong><p>What is the IDU exam?</p></strong>
+<ol >
+    <li type='none'>IDU is short for interdisciplinary Understanding</li>
+    <li type='none'>Is a unit where students understand events and concepts by combining two or more MYP subjects</li>
+    <li type='none'>With this interdisciplinary understanding, students try to resolve contemporary problems that people face on a global level</li>
+</ol>
+</section>
+<section class='subject_content' id='questions'>
+<h3>QUESTIONS & ANSWERS</h3>
+<strong><p id='how1'>How do the IDU examinations work?</p></strong>
+<ul>
+    <li>IDU is an e-assessment subject and the students will have to appear for an e-assessment like any other e-assessment subject</li>
+    <li>The examination is for two hours and for 80 marks</li>
+    <li>Students will be asked questions regarding a set of sources, which would have been provided in advance by the school</li>
+</ul>
+<br>
+<strong><p id='how2'>How to prepare for IDU examinations?</p></strong>
+<ul>
+    <li>The school will provide students with a 'SOURCE BOOKLET' and focused disciplines/subjects, well in advance</li>
+    <li>The source booklet contains all the relevant sources which the exam will revolve around</li>
+    <li>Students must go through each and every source and annotate the sources with respect to the provided global context and focused disciplines</li>
+    <li>In addition to that, it is advised that students revise some of their subject knowledge with respect to the chosen subjects and global context</li>
+    <li>Students can also read articles and external information about the sources</li>
+</ul>
+</section>
+<br>
+<img id='idu_img' width='550px' src='{{url_for("static", filename="images/idu_banner.png")}}'>
+<style>
+#idu_img {
+    margin: 10px auto 20px;
+    display: block;
+    border-radius: 10px;
+    padding-bottom: 15px;
+}
+</style>
+
+<section class='subject_content' id='criterions'>
+<h3>CRITERIONS FOR EXAM</h3>
+<strong><p id='a'>Criterion A: Disciplinary Grounding</p></strong>
+<ul>
+    <li>This is the criteria where students have to use their subject specific knowledge and factual information to come to conclusions</li>
+    <li>Typically, questions pertaining only to criteria A will be only for 2 - 4 marks</li>
+</ul>
+<br>
+<strong><p id='b'>Criterion B: Synthesising</p></strong>
+<ul>
+    <li>This is the criteria where students have to combine knowledge and skills of the different subjects in order to propose a solution or infer something
+    </li>
+    <li>The source booklet contains all the relevant sources which the exam will revolve around</li>
+    <li>These type of questions are typically long answers and require students to write essays</li>
+    <li>These questions range from 8 marks to 15 marks</li>
+    <li>A context might be provided to the students - such as a letter, article, speech etc. - based on which their answer's format must change</li>
+</ul>
+<br>
+<strong><p id='c'>Criterion C: Communication</p></strong>
+<ul>
+    <li>This is the criteria where students use appropriate language, linguistic devices and factual information in order to bring forth their message</li>
+    <li>Based on the context of the question, the requirements changes. For instance, the language, devices and information included in a speech is different from those included in a letter. Based on the context provided to the students, the requirements changes</li>
+</ul>
+<br>
+<strong><p id='d'>Criterion D: Reflection</p></strong>
+<ul>
+    <li>This is the criteria where students are meant to reflect on their aforementioned proposals and solutions and evalute them</li>
+    <li>The source booklet contains all the relevant sources which the exam will revolve around</li>
+    <li>They reflect on the sources and their own proposals and evaluate their strengths and limiations</li>
+</ul>
+<br>
+<em style='text-align: center;'><h3 style='color: red;'>Note :- Usually, criterion B, C and D are combined</h3></em>
+</section>
+</div>
+</section>
+
+</section> <!--Everything should be above this seciton, else they go out of the border and the footer comes up -->
+
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+	<!-- Footer -->
+		<footer id="footer">
+			
+			<div class="copyright">
+				&copy; MYP1080
+			</div>
+		</footer>
+
+	<script type="text/javascript">
+		function showans(id_name, called){
+			var answer = document.getElementById(id_name);
+			if(answer.style.display === "none")
+			{
+				answer.style.display = "block";
+			}
+			else{
+				answer.style.display = "none";
+			};
+
+			if (String(called.innerHTML).includes('Show')) {
+				called.innerHTML = String(called.innerHTML).replace('Show', 'Hide');
+			} else if(String(called.innerHTML).includes('Hide')){
+				called.innerHTML = String(called.innerHTML).replace('Hide', 'Show')
+			};
+		};
+		
+		function color_mode(color) {
+			let colour_preference = String(color);
+		}
+	</script>
+
+{% endblock %}

@@ -1,0 +1,196 @@
+{% extends "layout.html" %}
+{% block body %}
+
+	<!-- Header -->
+		<header id="header">
+			<div class="logo"><a href="{{url_for('index')}}">MYP 1080<SUP>o</SUP></a></div>
+			<a href="#menu">Menu</a>
+		</header>
+
+	<!-- Nav -->
+		<nav id="menu">
+			<ul class="links">
+				<li><a href="{{url_for('index')}}">Home</a></li>
+				<li><a href="{{url_for('Humanities')}}">Individuals and Societies</a></li>
+				<li><a href="{{url_for('Sciences')}}">Sciences</a></li>
+				<li><a href="{{url_for('Math')}}">Math</a></li>
+				<li><a href="{{url_for('English')}}">English</a></li>
+				<li><a href="{{url_for('PersonalProject')}}">Personal Project</a></li>
+				<li><a href="{{url_for('EPortfolio')}}">E-Portfolio</a></li>
+				<li><a href="{{url_for('IDU')}}">IDU</a></li>
+				<li><a href="{{url_for('chat_index')}}">Chats</a></li>
+			</ul>
+		</nav>
+
+	<!-- One -->
+		<section id="One" class="wrapper style3">
+			<div class="inner">
+				<header class="align-center">
+					<p>MYP Subjects</p>
+					<h2>Individuals and Societies</h2>
+				</header>
+			</div>
+		</section>
+
+	<!-- Two -->
+<section id="two" class="wrapper style2">
+	<div class="inner">
+	<div class="box">
+	<div class="content">
+
+	<h2>Table of Contents</h2>
+	<ol style="color: #000;">
+		<a href="#history"><li>History</li></a>
+		<ul>
+			<a href="#intro"><li>Introduction to MYP History</li></a>
+			<a href="#chapter1_sample"><li>Chapter 1 Sample Question & Answer</li></a>
+			<a href="#chapter4_sample"><li>Chapter 4 Sample Question & Answer</li></a>
+			<a href="#downloads"><li>Downloadable Files</li></a>
+		</ul>	
+		<a href="#history"><li>Geography</li></a>
+		<ul>
+			<a href="#intro_geo"><li>Introduction to MYP Geography</li></a>
+			<a href="#geo_samples"><li>Sample Questions & Answers</li></a>
+			<a href="#downloads_geo"><li>Downloadable Files</li></a>
+		</ul>	
+	<h2 id="history" style='text-align: center;'>---------------</h2>
+	<h2 style='text-align: center;'>History</h2>
+
+	<h3 id="intro">INTRODUCTION</h3>
+	<p><ul style="color: #000;">
+	<li>For history, the best resource students can use for factual information is the MYP Years 4 and 5 textbook (here is a link to buy the book => <a href= "https://www.amazon.in/History-IB-MYP-Concept/dp/1471841588">https://www.amazon.in/History-IB-MYP-Concept/dp/1471841588</a>)</li>
+	<li>Like in any other board, history is a very lengthy subject in MYP. Most of the questions are descriptive ones and the students are required to type fast and a lot.</li>
+	<li>In order to practice writing such long answers, would be to write answers using the questions given in the history textbook. The title page of each chapter has a question (which is the title of the chapter). Students can answer this question by including all points in the chapter given. </li>
+	<li>Below are a few sample answers that you can use for your reference --> </li>
+	</ul></p>
+
+	<h3 id="chapter1_sample">CHAPTER 1 SAMPLE</h3>
+	<strong><p>To what extent can innovation and revolutionary change brief benefits to society?</p></strong>
+	<button onclick="showans('history_1_ans', this)">Show Answer 1</button>
+	<div id="history_1_ans" style="margin-top: 10px; color: #FF0000; display: none;">
+			
+		<p>Innovations, along with science,  lead to revolutionary changes in a person or system.</p>
+
+		<p>The industrial revolution was a period during which there was a distant shift from agro production to factory and manufacturing based production. Starting in the 1750, the age of industrialisation was born in Britain, and it spread to other countries like wildfire. It is during this period of hundred years, there were numerous innovations made in order to improve the daily life of man. Most of these inventions are pertaining to the textile industry - which was the industry to first industrialise in britain - such as the Spinning Jenny invented by John Hargreaves In 1764, which was a machine that made weaving much easier and quicker for people.  Similarly, the power loom ,invented by Edmund Cartwright in 1785, is a water powered weaving machine that helped people weave more cloth at a faster rate. Other notable inventions and discoveries were made in the iron and steel industry. Abraham Darby discovered that using coal in the form of coke helps extract more iron easily, thus increasing the iron and steel production rates, Henry Cort devised a method called ‘puddling’ and a specific tool for it, to make the production of wrought iron easier for workers. <p>
+
+		<p>With the increase in such inventions and discoveries, countries started establishing factories and industries to mass produce such raw materials or machinery to help better the people’s lives. The first factory built was the cotton factory, with the intention of increasing the amount of cotton produced to make more clothes. In order to process the large amounts of cotton, mills started incorporating machinery in order to process the cotton faster and better. Inspired by this industrialisation, various other factories arose like the iron and steel factories. However, there were many flaws observed in the factory system. Kids younger than thirteen years of age were brought into work, workers were forced into long hours of work but were paid minimal wages, and the working conditions were extremely harsh - children were beaten and the working conditions were unhygienic. In order to bring about change to this harsh system, workers campaigned for long hours to reduce the work hours for both adults and children. It is after these campaigns was the factory reform act of 1833 introduced. The act contained provisions to reduce the pressure of the campaigns and satisfy the workers needs:- </p>
+
+		<ul>
+			<li>No children under the age of 9 could work in the mills</li>
+			<li> Children between 9 and 13 were to work no more than 12 hours a day</li>
+			<li>No one under 18 was to work the night shift</li>
+			<li>Four factory inspectors were appointed to oversee the Act</li>
+		</ul>
+
+		<p>Although this act was formed for betterment of the workers, four inspectors could not been appointed and the families usually lied about their children’s age to maximise their family returns.</p>
+
+		<p>Along with new means of production and various inventions, there were many social and political changes caused by the industrial revolution. Due to the increase in production due to the newly available machinery, wealth was now available to new groups of people. This resulted in the formation of a middle class, which made money from the factories or investing in new businesses such as the railways. Skilled workers could easily earn money, although indigenous and orthodox workers were put of work due to the automated production practices by industries. This opened  extensive use of machinery paved way for unskilled workers to gain jobs with ease. In a few countries, unskilled labour was preferred over skilled labour in order to cut the money spent on man power. </p>
+
+		<p>Due to the emergence of a middle class, there were many riots between them and the government. The middle class was paying as much taxes as the landowners but were not granted the privilege to vote. Similarly the working class were forced to live and work in awful conditions and were not provided eligibility to vote. These led to clashes between the middle and working classes and the government, resulting in massacres such as the peterloo massacre in Manchester . It is after this massacre did the government face more pressure from the middle and working classes, and hence established the Reform act in 1832 which allowed more people to vote. </p>
+
+		<p>From this we can see, how industrialisation and revolutionary changes lead to beneficial changes and a few minor complications. However, it is these problems and changes both combined that complete the puzzle and catalyse the development process. It is from this I understood and truly believe, that innovation and revolutionary changes are the greatest engines of development in history. It is because of these innovations that we see so many large scale industries today, like the automobile industry, food industry, electronics industry and so many others. 
+		</p>
+	</div>
+	<br><br>
+	<h3 id="chapter4_sample">CHAPTER 4 SAMPLE</h3>
+	<strong><p>Why have our everyday lives changed over the past century?</p></strong>
+	<button onclick="showans('history_2_ans', this)">Show Answer 2</button>
+	<div id="history_2_ans" style="margin-top: 10px; color: #FF0000; display: none;">
+		<p>Scientific and technical innovations change individual, household and daily life. This statement related closely with the key concept of change, the related concept of identity and the global context of “scientific and technical innovation.” The global context scientific and technical innovation is brought out through the constant innovations introduced by the people by using their knowledge and skills in the fields of technology and science. These innovations, as the chapter points out, bring about various changes in the society, thus bringing out the concept of change. Identity is introduced in a more subtle manner, by showing how innovations can lead to a new identity formation or identity transformation. Thus, the concept of identity is brought out by showing the impact of innovations one one’s identity.</p>
+		<h4 style="color: #FF0000">Industrial revolution</h4>
+		<p>Development in technology is the root cause for the changes in households and the lives of individuals. The industrial revolution is one of the most notable periods in the last 200 years which has resulted in major technological developments, thus introducing new changes to the daily lives of numerous people. The industrial revolution was period starting from the 1750s in Britain in which the world shifted from an agro and labour based production to a more mechanised means of production. It is during this very period, numerous pioneers and innovators arose like Thomas Alva Edison, Graham Bell and others. </p>
+
+		<h4 style="color: #FF0000">Henry Ford</h4>
+		<p>One of the most notable pioneers who came up during this period was Henry Ford. 
+		Henry Ford was an American industrialist and a business magnate, the founder of the Ford Motor Company, and the sponsor of the development of the assembly line technique of mass production. He is well known for his invention of the Ford Model T. This car was the first car produced by Ford and was the most affordable automobile in the market back then. It was after the invention of this car, did the usage and demand for automobiles - especially cars - increase drastically. Ford was the first person to indulge in the practice of “mass production.” Rather than assembling each and every car by hand, he would mass produce cars to increase his income and reduce production time. He did this through the following methods:- </p>
+		<ul>
+		<li>Identical cars - the parts then could be standardised and time would not be wasted in making new parts</li>
+		<li>Division of labour - instead of one or two workers, a group of workers, each with a specific skill, where each worker had to finish only ONE work and repeat that over and over again</li>
+		<li>A moving assembly - instead of people moving from place to place, a conveyer belt was used to bring the parts to the place where the workers were</li>
+		</ul>
+
+		<p>This way, Henry Ford was able to master the art of mass production by equally and strategically utilising man force and machine force. This helped in increasing the number of people using his car, thus increasing his sphere of influence and making him and his car more well known around the world.</p>
+
+		<h4 style="color: #FF0000">Impact of mass production</h4>
+		<p>This practice of mass production which henry ford was indulged in, made a huge change in the realm of product or machine production in all factories and industries. All industries started to use the same system as henry ford: the conveyer belt, identical products etc - to mass produce their products. Soon, washing machines, radios, vacuum cleaner and other similar products were being mass produced. This made the product cheaper, thus making it more affordable for the common man. Since it was more affordable, the sales of these products increased and led to the increase in the worker wages. Even if people lacked money, they were still able to buy these products due to the EMI (Equal monthly instalment) system which was present, especially in the US in the 1920s. Costumers who did not have the money could buy the products buy paying the total amount in instalments. Since most of these products relied on electricity for functioning, more homes were supplied with electricity - from 33% in 1920 to nearly 70% in 1929 - thus reducing the prices of electricity as well. To help companies sell their products in a more creative manner, advertisement companies started making more advertisements and flyers, and started using more sophisticated techniques to appeal to the audience.</p>
+
+		<h4 style="color: #FF0000">Impact of WW2 on daily life in Britain</h4>
+		<p>The second world war is an event in the history of mankind which brought about many changes to the society. All the countries which fought the war experienced both temporary and permanent changes. The Second world war had a dramatic impact on the lives of individuals and households. Between may and August, 1940, britain faced the threat of invasion and then between 7 September  1940 and mid-may 1940, civilians in many cities faced nightly bombing raids, which became known as the Blitz. In addition to the impact that these attacks had on daily life, the Emergency Powers Act, which was passed in May 1940, gave the british government extensive powers over people and property. British people were also encouraged to volunteer for war work, to change their lifestyles to save food, and to look after evacuees sent out of the cities.  </p>
+		<ul>
+		<li>During the second world war, Britain was bombed by germans extensively. Two months of nightly bombing of London and other british cities took place during this period. In order to prevent german bombers from seeing the city and bombing it, the people of britain had to maintain a blackout: no light in any form could by turned on at night. This led to many accidents: close to 1500 people died as a result of this, when compared to the pre-war average of 600 deaths per month. </li>
+		<li>Due to such heavy artillery deployment and bombings, civilians had to be evacuated from their hometowns to somewhere else, leaving behind most of their belongings and homes. Many of the evacuees were working class members who were visiting the country-side for the first time. On the other hand, many of the host families were rich, so different people of different social/economical status were grouped together for the first time.</li> 
+		<li>Due to ravaging war, food shortages became a major problem. Majority of the food was provided to those fighting on the battlefield, due to which there was nothing left for people at home. Another reason for the food shortages was the sinking of supply and resource ships coming to britain. In order to provide equal amounts of food to everybody - including evacuees and refugees</li> 
+		<li>The government introduced the system of food rationing, in january 1940. Families were given books of ration stamps which they used to buy a fixed amount of certain (a) product(s). There was also an extra allowance for luxury items such as tinned fruit. The Board of Trade also issued recipe books which had clear and easy to do recipes so people could make healthy dishes out of the limited resources they were given. In order to reduce the difficulties people faced due to the rationing system people were encouraged to grow their own food and use that produce. Clothes were rationed from 1941. People were taught how to and encouraged to mend their own clothing and using cheaper, more basic clothes and furniture. </li>
+		<li>All countries wanted to rearm themselves after the devastating losses of the first world war. As a result of which, conscription was introduced – young men and boy were forced into the army. Due to this, all sections of income, which were all male domains, were left untouched, thus impacting the economy of Britain. In order to prevent any further losses, women were conscripted into factory, agriculture or war related works. Women were now given the opportunity to do a wide range of jobs and develop new skills which they could not do before since they were 'women.' However, once the war ended, women were meant to hand over their jobs to men and return to their domestic sphere. </li>
+		<li>Propaganda, media and censorship were crucial tools used by every single nation during this period. For instance, when women were empowered by the various jobs they were given, countries made propaganda posters portraying their women as heroes for taking on the difficult task to support the soldier men, thus making them major stakeholders of a country's success. The main reason why these tools were used was to motivate citizens of a country to take action and 'voluntarily' to join national services and help the country win the war. It was a public means through which people were motivated and promised/assured victory, so the political entities of the country will gain public support. Since these were viewed by everybody in the nation, it was a good method to notify and spread breaking news around the nation, for example, this method was used by Britain in order to spread word about the Blitz. </li>
+		<li>Government implemented well fare schemes to support the struggling citizens. Health care was improved and nurseries were set up to look after the children of working mothers. Special food rations and vitamins were made available to young children and mothers. The transport system became a public service rather than a private business. These changes were to provide the foundation for legislation that was introduced after the war, in particular with regard to the national health service and the welfare state.</li>
+		</ul>
+
+		<h4 style="color: #FF0000">How has the role of government impacted on everyday life in the 20th century</h4>
+		<p>The industrial revolution brought about rapid changes in the society, which forced the government to pass legislation that affected the workplace, education and public health. The first and second world wars only increased the role of government in people's lives and in some nations, this continued to be the case even after the war. In Britain, for instance, the new labour government that was elected into power in 1945 at the end of the second world war was committed to improving the population's health and education. The aim of this government was to tackle the 'giant evils' which included want, ignorance, squalor, idleness and disease. </p>
+
+		<p>Through this we can how individuals, households and daily lives have changes over the years and how each milestone in history contributed to these changes. All of these changes over the years is what has resulted in the world we see today, in front of us in the 21st century. </p>
+	</div>
+	<br><br>
+	<p style="color: #000; font-size: 20px; text-align: center;"><b>WE ADVISE YOU TO TIME YOURSELF AS YOU TYPE THESE ANSWERS, IN ORDER TO IMPROVE YOUR TYPING ACCURACY AND SPEED.  </b></p>
+
+
+	<h3 id="downloads">DOWNLOADABLE FILES</h3>
+	<ul>
+		<li><a id="download" href="{{url_for('static', filename='subject_assets/downloads/revision/G10 History_Revision Booklet.pdf')}}" download = "history_revision_booklet.pdf"><img id="icon" height="30px" width="25px" src="{{url_for('static', filename='images/pdf_logo.png')}}">Revision Booklet History</a></li>
+		<br>
+		<li><a id="download" href="{{url_for('static', filename='subject_assets/downloads/qp/history_qp.pdf')}}" download = "history_sample_qp.pdf"><img id="icon" height="30px" width="25px" src="{{url_for('static', filename='images/pdf_logo.png')}}">Sample History Question Paper</a></li>
+	</ul>
+
+	<h2 id="geography" style='text-align: center;'>---------------</h2>
+	<h2 style='text-align: center;'>Geography</h2>
+	<h3 id="intro_geo">INTRODUCTION</h3>
+	<p><ul style="color: #000;">
+	<li>For geography, the best resource students can use for factual information is the MYP Years 4 and 5 textbook (here is a link to buy the book => <a href= "https://www.amazon.in/Geography-IB-MYP-Louise-Harrison-ebook/dp/B07K25WMQP">https://www.amazon.in/Geography-IB-MYP-Louise-Harrison-ebook/dp/B07K25WMQP</a>)</li>
+	<li>Geography in MYP is not extremely content based, however you will need a deep understanding of all the core concepts if you wish to score well on your exams.</li>
+	<li>They key to scoring well in Geography in the MYP, would not be to memorize the concepts but rather to use answering questions from case-studies, which would better instill all the concepts in your brain, and make answering questions in the actual exam easier. </li>
+	<li>Below you can find the syllabus, for which you can find ample content from online <strong>and in addition there is a REVISION BOOKLETS(WITH CASE-STUDIES) available in the downloadable files section where there are case study questions and content review from all topics</strong></li>
+	</ul></p>
+
+	<h3 id="chapter1_sample">SAMPLE QUESTIONS</h3>
+	<strong style="text-align: center;"><p>*** For sample questions it would be redundant to provide them here, because you would get the best results from using the revision booklet linked below. ***</p></strong>
+
+	<h3 id="downloads">DOWNLOADABLE FILES</h3>
+	
+	<ul>
+		<li><a id="download" href="{{url_for('static', filename='subject_assets/downloads/revision/G10 Geography.pdf')}}" download = "geography_revision_booklet.pdf"><img id="icon" height="30px" width="25px" src="{{url_for('static', filename='images/pdf_logo.png')}}">Revision Booklet Geography</a></li>
+	</ul>
+
+</section>
+
+<!-- Footer -->
+<footer id="footer">
+	<div class="copyright">
+		&copy; MYP1080
+	</div>
+</footer>
+<script type="text/javascript">
+	function showans(id_name, called){
+		var answer = document.getElementById(id_name);
+		if(answer.style.display === "none")
+		{
+			answer.style.display = "block";
+		}
+		else{
+			answer.style.display = "none";
+		};
+
+		if (String(called.innerHTML).includes('Show')) {
+			called.innerHTML = String(called.innerHTML).replace('Show', 'Hide');
+		} else if(String(called.innerHTML).includes('Hide')){
+			called.innerHTML = String(called.innerHTML).replace('Hide', 'Show')
+		};
+	};
+	
+	function color_mode(color) {
+		let colour_preference = String(color);
+	}
+</script>
+
+
+{% endblock %}

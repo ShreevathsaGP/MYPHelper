@@ -1,0 +1,500 @@
+{% extends "layout.html" %}
+{% block body %}
+<head>
+    <meta name='description' description='A complete guide to the MYP Personal Projects, with exemplars and ability to chat with mentors.'>
+</head>
+<!-- Main -->
+<section id="main" class="wrapper">
+    <div class="container">
+        <!--<h3>{{questions}}</h3>-->
+        <header class="major special">
+            <!--Back button-->
+            <div id='back_holder'>
+                <a href="{{url_for('index')}}" id="back_link">
+                    <button text-align='center' id="back">Return Home</button>
+                </a>
+
+                <a href="{{url_for('chat_index')}}">
+                    <button text-align = "center" id="chat">Go to chat</button>
+                </a>
+            </div>
+            
+            <h2 id="title">{{ Subject }}</h2>
+            <br><br>
+            <p id='table_header' text-align="left">Table of contents</p>
+            <p></p>
+            <ol id='table_of_contents' type="A">
+                <li><a href='#introduction'>Introduction</a></li>
+                <li><a href='#journal'>Process Journal</a></li>
+                <li><a href="#product">Product/Outcome</a></li>
+                <li><a href='#report'>Final Report</a></li>
+                <li><a href='#submission'>Submission</a></li>
+            </ol>
+        </header>
+
+            <section class='subject_content' id='introduction'>
+                <h3>INTRODUCTION</h3>
+                <p>What is Personal Project?</p>
+                <ol >
+                    <li type='none'>The personal project is an opportunity provided by IB for MYP year 5 students to explore and learn more about their hidden potentials. Furthermore, The project allows students to delve deeper and gain more knowledge about topics and domains they are enthusiastic and extremely passionate about</li>
+                </ol>
+
+                <p>What do you have to do in the personal project?</p>
+                <ol >
+                    <li type='none'>Students are meant to either produce an outcome and or product based on their personal goals and interests set at the beginning of the project. The personal project is divided into 4 phases: investigating, planning, taking action and reflection. </li>
+                </ol>
+
+                <p>Criterions of the Personal Project</p>
+                <ol >
+                    <li type='none'>Investigating</li>
+                    <li type='none'>
+                        <ul>
+                            <li>This is the first phase of the project and is referred to as Criterion A.</li>
+                            <li>It is in this phase that you do all the brainstorming, do your primitive research to set a goal, finalise a goal and get it approved by your school assigned personal project supervisor.</li>
+                            <li>This criterion also included your research after the goal has been approved.</li>
+                        </ul>
+                    </li>
+                    <li type='none'>Planning</li>
+                    <li type='none'>
+                        <ul>
+                            <li>This is the second stage and is referred to as Criterion B</li>
+                            <li>This is the phase where you do all your basic planning in order to progress smoothly through the course of this project.</li>
+                            <li>This is the most important and crucial stage. Without planning, trust us, you won't be able to manage all the work at hand. So make effective plans.</li>
+                            <li>There are various techniques that can be used in order to plan and organise yourself. Refer to the  weblink for more details  -  <a href='https://www.educba.com/project-scheduling-techniques/'>https://www.educba.com/project-scheduling-techniques/</a></li>
+                        </ul>
+                    </li>
+                    <li type='none'>Taking Action</li>
+                    <li type='none'>
+                        <ul>
+                            <li>This is the third stage and is referred to as Criterion C.</li>
+                            <li>This is the phase where you actually start making your device or start trying to producing your outcome.</li>
+                        </ul>
+                    </li>
+                    <li type='none'>Reflection</li>
+                    <li type='none'>
+                        <ul>
+                            <li>The fourth and final stage and is referred to as Criterion D</li>
+                            <li>This is the phase where you evaluate your final product or outcome and reflect on it.</li>
+                            <li>You deduce what and how your product or outcome can be improved based on the errors you identify.</li>
+                        </ul>
+                    </li>
+                </ol>
+
+                <p>What tasks are entailed in the personal project?</p>
+                <ol >
+                    <li type='none'>The students have to prepare the below by the end of the project:-</li>
+                    <li type='none'>
+                        <ul>
+                            <li>Process Journal</li>
+                            <li>Your product or outcome (if it is an outcome, then the student must prepare appropriate evidence to display it).</li>
+                            <li>Personal project report.</li>
+                        </ul>
+                </ol>
+            </section>
+            <section class='subject_content' id='journal'>
+                <h3>PROCESS JOURNAL</h3>
+                <p>What is the Process Journal?</p>
+                <ol >
+                    <li type='none'>
+                        <ul>
+                            <li>The process journal, like the name suggests, is a journal. It is a daily or weekly record of all your personal project-related activities. </li>
+                            <li>All the research, your planning, discussions with your school assigned supervisor, everything is recorded in this journal.</li>
+                            <li>The journal could contain text, images, drawings, videos, audios. Almost any means through which you can record all your personal project activities in a neat and organised manner for future use. </li>
+                        </ul>
+                </ol>
+
+                <p>What makes a good process journal?</p>
+                <div class="table-wrapper">
+
+                    <table class="alt" id="mentortable">
+
+                        <thead>
+                            <tr>
+                                <th style='width: 40%;'>STEPS FOR A GOOD PROCESS JOURNAL</th>
+                                <th style='width: 60%;'>DESCRIPTION</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>1. Personal project mind-map</td>
+                                <td>
+                                    <ul>
+                                        <li>A graphic organiser of your personal interests, strengths and weaknesses.</li>
+                                        <li>Does not have to be limited to a mind map and can be any graphic organiser</li>
+                                    </ul>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>2. Goal and Global Context</td>
+                                <td>
+                                    <ul>
+                                        <li>You need to include the SMARTC breakdown of your goal and a brief as to why you chose that goal.</li>
+                                        <li>If you want, you can include a picture of the goal statement sheet that has been signed by your school-issued supervisor.</li>
+                                        <li>You also need to decide which global context will help you streamline your thinking to finish your project efficiently. More importantly, the global context needs to be apt for the theme of your project.</li>
+                                    </ul>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>3. Identification of prior learning and subject-specific knowledge</td>
+                                <td>
+                                    <ul>
+                                        <li>With respect to your chosen project, you need to identify the subjects or disciplines which correspond to it and the respective knowledge you already possess. </li>
+                                        <li>You can also mention the related skills that you already have .</li>
+                                        <li>This information can be represented in the form of a KWL chart (Know, Wonder, Learnt).</li>
+                                    </ul>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>4. Demonstrate research skills</td>
+                                <td>
+                                    <ul>
+                                        <li>Along with prior and subject-specific knowledge, the information you acquired through research must be mentioned. You can do so by either showing any notes you have taken or cite your sources. </li>
+                                        <li>You need to show evidence for your research skills by citing the secondary sources you used in any accepted format (it is advised to use MLA format).</li>
+                                        <li><a id="download" href="{{url_for('static', filename='documents/sourcing.pptx')}}" download="sourcing_and_referncing.pptx">Here is a PPT with more information about what and how to source things for your personal project</a></li>
+                                        <li>You need to include a research plan that you have created. This research plan can be in the form of a table, showing the research topic, the sources you will use, what type of source, why you need to conduct this research and when you will do it.</li>
+                                        <li>You need to include a method through which you evaluated the reliability and relevance of those secondary sources, such as the CRAAP test. Below is the CRAAP test format </li>
+                                        <img height="300px" width="400px" src="{{url_for('static', filename='images/craap.png')}}">
+                                    </ul>
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <td>5. Design specifications and success criteria</td>
+                                <td>
+                                    <ul>
+                                        <li>A success criterion is a rubric which you follow in order to quantify as to how successful your product or outcome is. Design specifications are benchmarks which you establish,  before you start working on your end product, to help streamline yourself to product high quality results. </li>
+                                        <li>These are the tools you will use at the end, after finishing your product or outcome, to see how successful you were and to decide on what improvements or changes you can make in the future.</li>
+                                    </ul>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>6. Develop a plan</td>
+                                <td>
+                                    <ul>
+                                        <li>Using any planning method (refer to the website mentioned above for planning methods) you need to show how you have organised your time to complete the project on time. </li>
+                                        <li>You can include images or pictures of your planning, such as a picture of your calendar or gantt chart, as evidence</li>
+                                        <li>If there are any changes you have made to the initial plan, you can include your revised versions to display self management skills.</li>
+                                    </ul>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>7. Evidence of your product or outcome</td>
+                                <td>
+                                    <ul>
+                                        <li>You need to include any pictures or video files as evidence to show that you have achieved the end result you desired.</li>
+                                    </ul>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>8. Evaluation of your product or outcome</td>
+                                <td>
+                                    <ul>
+                                        <li>Using the design specifications and success criteria you established before, you need to evaluate the success of your end result (product or outcome).</li>
+                                    </ul>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>9. Demonstrating self-management and thinking skills</td>
+                                <td>
+                                    <ul>
+                                        <li>Since this is the process journal, you can either demonstrate these skills using pictures as evidence, or you can annotate sections in your journal which portray these skills and prove that you have used them through the course of the project. </li>
+                                    </ul>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>10. Development as an IB learner</td>
+                                <td>
+                                    <ul>
+                                        <li>Since this is the process journal, you can either demonstrate the IB learner profiles you have used through the course of this project through pictures, or you can annotate sections in your journal which portray important IB learner profiles you used. </li>
+                                    </ul>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+            </section>
+
+            <section class='subject_content' id='product'>
+                <p></p>
+                <p>After going through this table, you might have a few doubts like :-</p>
+                <p></p>
+                <li><i>What are the MYP Global Contexts?</i></li>
+                <ul>
+                    <li>MYP Global Contexts are tools which help you streamline your thinking and focus on specific aspects of an object or event</li>
+                    <li>Below are all the MYP Global Contexts</li>
+                    <style>
+                       
+                    </style>
+                    <img id="img" src="{{url_for('static', filename='images/gc.jpg')}}" >
+                </ul>
+                <p></p>
+                <li><i>What is a success criteria?</i></li>
+                <ul>
+                    <li>A success criteria is just like a rubric</li>
+                    <li>It helps you score or quantify a certain aspect of your product/outcome, thus giving you a better understanding as to how good the product/outcome is, what are its weaknesses, and what changes or improvements can be made</li>
+                    <li>Below is an example of a succcess criteria</li>
+                    <img id="special_img" src="{{url_for('static', filename='images/sc.png')}}" width="600px">
+                </ul>
+
+                <br>
+
+                <h3>Product or Outcome</h3>
+                <p>What should be your product or outcome?</p>
+                <ul>
+                    <li>Your product or outcome could be <strong>anything</strong> of your choice.</li>
+                    <li>However, This is only possible, as long your goal is a SMARTC goal:-</li>
+                    <li type='none'>
+                        <ul style='list-style-type: circle'>
+                            <img id = "img" src="{{url_for('static', filename='images/goal.jpg')}}">
+                        </ul>
+                    </li>
+                    <li>Your product could be something completely different and innovative, or an improvement or extension to an existing thing. Your product can be something like an improved water purifying system, a product that helps the blind navigate, a more accurate stock market predictor, a new hand-writing detector, a virtual emotional counsellor and many more.</li>
+                    <li>Similarly, your outcome could be completely based on your interests. It could be something like learning how to dunk, learning how to do a certain stroke in tennis or table tennis, learning a new set of algorithms to solve the Rubik’s cube in under 15 seconds and many more. </li>
+                    <li>For whatever you choose, you need to prepare appropriately and evidence. The details of this shall be mentioned along with the personal project report details.</li>
+                </ul>
+            </section>
+            <br>
+            <section class='subject_content' id='report'>
+                <h3>Final Report</h3>
+                <p>What is the Personal Project Report?</p>
+                <ul>
+                    <li>It acts as a more concise version of the Process journal focusing on all the important aspects of the journal.</li>
+                    <li>The report can be in the form of a report (handwritten or typed), an audio recording or video recording. It can even be a multimedia report, wherein you can combine two forms of media and make a report (such as a video and a typed report or any other combination).</li>
+                </ul>
+                <br>
+                <p>Restrictions for the report:</p>
+                <p style='margin-left: 5%;'><em>Restrictions for each type of report:</em></p>
+                <table class='alt' id='mentortable'>
+                    <thead>
+                        <tr>
+                        <th style='width: 50%;'>Format</th>
+                        <th style='width: 50%;'>Limitations</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Electronic or written</td>
+                            <td>1500 to 3500 words</td>
+                        </tr>
+
+                        <tr>
+                            <td>Visual or video recording</td>
+                            <td>13 to 15 minutes</td>
+                        </tr>
+
+                        <tr>
+                            <td>Audio or audio recording</td>
+                            <td>13 to 15 minutes</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+
+                <p style='margin-left: 5%;'><em>Multimedia reports limitations:</em></p>
+                <table class='alt' id='mentortable'>
+                    <thead>
+                        <tr>
+                        <th style='width: 50%;'>Audio/video length</th>
+                        <th style='width: 50%;'>Document length</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>3 minutes</td>
+                            <td>1200 to 2800 words</td>
+                        </tr>
+
+                        <tr>
+                            <td>6 minutes</td>
+                            <td>900 to 2100 words</td>
+                        </tr>
+
+                        <tr>
+                            <td>9 minutes</td>
+                            <td>600 to 1400 words</td>
+                        </tr>
+
+                        <tr>
+                            <td>12 minutes </td>
+                            <td>300 to 700 words</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+                <p style='margin-left: 5%;'><em>Aspects that are included in word count:</em></p>
+                <table class='alt' id='mentortable'>
+                    <thead>
+                        <tr>
+                        <th style='width: 50%;'>Elements included in the word count</th>
+                        <th style='width: 50%;'>Elements not included in the word count</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>All section headings and respective content</td>
+                            <td>Title page and table of contents</td>
+                        </tr>
+
+                        <tr>
+                            <td>Quotes </td>
+                            <td>Maps, charts, diagrams or anything similar</td>
+                        </tr>
+
+                        <tr>
+                            <td>Footnotes not used for referencing</td>
+                            <td>Internal citations and bibliography</td>
+                        </tr>
+
+                        <tr>
+                            <td>Endnotes not used for referencing</td>
+                            <td>Appendices, process journal extracts and footnotes/endnotes used for referencing</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+                
+                <p><strong><em>WARNING: - Please remember that exceeding any of the above mentioned restrictions might lead to the reduction of achievement levels. </em></strong></p>
+                <br>
+                <li>If you wish to achieve the maximal grade for your report, you must include all the following points for each criterion in substantial detail</li>
+
+                <br>
+                <p><b>Criterion A: Investigating</b></p>
+                <li><i>Define a clear goal and global context for the project, based on personal interests</i></li>
+                <ol>
+                    <li>Give a detailed and precise description of the goal of your project</li>
+                    <li>Give a detailed and concise description of the global context that you chose and why (how does the context related with your project?)</li>
+                    <li>Describe in short, why the personal project that you chose and completed is personl and challenging for you</li>
+                    <li>If changes were made to the project goal or idea, describe those changes, the reason why you made them, and how they improved or made your project worse</li>
+                </ol>
+                <p></p>
+                <li><i>Identify prior learning and subject specific-knowledge relavtn to the project</i></li>
+                <ol>
+                    <li>Identify and list in minimal detail everything you laready knew about the topic of your project, before you started.</li>
+                    <li>Identify and list all the subject-specific skills (related to the project) you had before the start of the project, and how those skills helped you through the course of the project.</li>
+                </ol>
+
+                <p></p>
+                <li><i>Demonstrate research skills</i></li>
+                <ol>
+                    <li>Discuss in minimal detail, the research skills you had before you started the project</li>
+                    <li>Now discuss how you imporve on your research skills through the researching phase and possible the entirety of your project</li>
+                    <li>Discuss, if you did, how you shared your research skills, in order to help others.</li>
+                </ol>
+
+                <p></p>
+                <p><b>Criterion B: Planning</b></p>
+                <li><i>Develop a sucess criteria for the product/outcome</i></li>
+                <ol>
+                    <li>List or refer to the design specifications made for the product</li>
+                    <li>If changes were made to the design specifications made for the product, briefly discuss the reason it was made, and how it changed the produc</li>
+                </ol>
+
+                <p></p>
+                <li><i>Plan and record the development process of the project</i></li>
+                <ol>
+                    <li>Provide evidence of the planning done for the product. They can be in the form of timelines, milestones set or any other strategies (more information about these strategies can be found in the link provided above)</li>
+                    <li>Present in detail a record of the process of making the product from beginning to end.</li>
+                </ol>
+                
+                <p></p>
+                <li><i>Demonstrate Self-Management skills</i></li>
+                <ol>
+                    <li>Outline the self management skills you possessed prior to the project</li>
+                    <li>Discuss how your self management skills improved over the course of the planning phases of your project, with references to  your plan, and how you followed them (evidence)</li>
+                    <li>Explain, if you did, how your self management skills affected and helped your peers.</li>
+                </ol>
+
+                <p></p>
+                <p><b>Criterion C: Taking Action</b></p>
+                <li><i>Create a product/outcome in response to the goal, context and success criteria</i></li>
+                <ol>
+                    <li>Discuss the product/outcome referring to it as the result of the entire process undertaken in your project</li>
+                    <li>Provide ample and clear evidence that shows the completion of your product, in the appendix or in the main document</li>
+                </ol>
+                <p></p>
+                <li><i>Demonstrate thinking skills	</i></li>
+                <ol>
+                    <li>Outline the thinking skills you possessed prior to beginning your personal project</li>
+                    <li>Discuss the thinking skills that you learnt/developed through the taking action phase of your personal project</li>
+                    <li>Explain, if it did, how your thinking skills helped your peers during this time.</li>
+                </ol>
+
+                <p></p>
+                <p><b>Criterion D: Reflecting</b></p>
+                <li><i>Evaluate the success of the product/outcome against your success criteria</i></li>
+                <ol>
+                    <li>Evaluate your final product/outcome against the specifications you designed in the planning phase of the project.</li>
+                    <li>Identify the strengths and weaknesses of your product or outcome, exploring its effect on the targeted audience, and through collection or documentation of already collected feedback, provide improvements for your product/outcome.</li>
+                    <li>Below is an example of a scored success criteria</li>
+                    <img  src="{{url_for('static', filename='images/ssc.png')}}">
+                </ol>
+
+                <p></p>
+                <li><i>Reflect on how completing the project has extended your knowledge and understanding of the topic(s) and global context chosen</i></li>
+                <ol>
+                    <li>Identify and discuss the challenges you faced when working to meet the specifications for your product/outcomes and how you overcame them</li>
+                    <li>Explain in detail how you progressed in your knowledge and understanding of the topic your project concerns.</li>
+                    <li>Explain how reflecting in your process journal about your progress enhanced the end result, which is your product/outcome.</li>
+                    <li>Explain in detail how your project helped enhance your understanding of the relevant global context(s).</li>
+                </ol>
+                
+                <p></p>
+                <li><i>Reflect on your development as IB learners through the project</i></li>
+                <ol>
+                    <li>Identify and describe in short, how you progressed as an IB learner through this project listing all the IB learner profiles that you have used in the project and how you have done so</li>
+                    <li>Discuss how your prior weaknesses turned into your present strengths as a result of this project.</li>
+                    <li>Briefly summarize the impact your product/outcome on its target audience and how everything you learnt from it will assist you in the future.</li>
+                </ol>
+
+                <h3>Extracts</h3>
+                <li>In your final report, you are meant to choose 10 pages of extracts from your personal project. These extracts can be a certain quote, table, map, diagram, anything from your personal project.</li>
+                <li>These extracts can be included in the appendix. The appendix cannot exceed a page limit of 10 pages</li>
+                <li>These extracts are evidence for, what you feel, are the most important or crucial elements of your report for which the examiner would require proof. </li>
+            </section>
+
+            <br>
+            <p id="download1"><b><a id="download" href="{{url_for('static', filename='documents/more_details.pdf')}}" download="MYP_Personl_Project_Details.pdf">For More Details Regarding the Personal Project, click here</a></b></p>
+            <p id="download1"><b><a id="download" href="chat.html">Or, if you would like to clarify your doubts one-on-one with an expert, go to chats</a></b></p>
+            
+            
+        
+            <section id="samples">
+                <br>
+                <h3>samples</h3>
+                <p>Below are a few examplar process journals that you can use for reference</p>
+                <ul>
+                    <li><a href="" download = "name of file after download"><img id="icon" height="30px" width="25px" src="{{url_for('static', filename='images/pdf_logo.png')}}"> Link Does Not Work</a></li>
+                </ul>
+                <br>
+                <p>Below are a few examplar reports that you can use for reference</p>
+                <ul>
+                    <li><a id="download" href="{{url_for('static', filename='documents/example_report_1.pdf')}}" download = "example_report_1.pdf"><img id="icon" height="30px" width="25px" src="{{url_for('static', filename='images/pdf_logo.png')}}">Example Report 1</a></li>
+                    <br>
+                    <li><a id="download" href="{{url_for('static', filename='documents/example_report_2.pdf')}}" download = "example_report_2.pdf"><img id="icon" height="30px" width="25px" src="{{url_for('static', filename='images/pdf_logo.png')}}">Example Report 2</a></li>
+                    
+                    
+                </ul>
+                <br>
+            </section>
+        
+        <!-- The following is how to do quiz-->
+        <!--<button id='quiz_button' onclick="window.location.href='{{url_for('quiz', quiz_data=questions)}}'">Quiz for Development Testing</button>-->
+
+    </div>
+</section>
+
+
+{% endblock %}

@@ -1,0 +1,347 @@
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap" rel="stylesheet">
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <title>MYP 1080 | Admins</title>
+        <link rel='icon' type='image/png' href="{{url_for('static', filename='images/logo.png')}}">
+        <style>
+            body {
+                display: grid;
+                grid-template-columns: 40% 60%;
+                grid-template-rows: 10% 44% 44%;
+                max-height: 100vh;
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+
+                .title {
+                    grid-row: 1;
+                    grid-column: 1/3;
+                }
+                    .title h1 {
+                        text-align: center;
+                        font-family: 'Titillium Web', sans-serif;
+                        margin-top: 10px;
+                        padding-top: 0px;
+                        text-transform: uppercase;
+                    }
+                    .home_link {
+                        text-emphasis: none;
+                        text-decoration: none;
+                    }
+
+                .views-table {
+                    grid-row: 2;
+                    grid-column: 1;
+                    overflow: scroll;
+                    margin-bottom: 5px;
+                    max-height: 100%;
+                }
+
+                    .views-table table, th, td {
+                        border: 1px solid black;
+                        border-collapse: collapse;
+                    }
+                    
+                    .views-table table {
+                        width: 100%;
+                        font-size: 20px;
+                    }
+                    
+                    .views-table td {
+                        height: 30px;
+                        padding-left: 15px;
+                        padding-bottom: 10px;
+                        padding-top: 10px;
+                        text-transform: capitalize;
+                    }
+                    .views-table table thead td {
+                        border: double black;
+                        padding-left: 0;
+                        text-align: center;
+                    }
+
+
+                .users-table {
+                    grid-column: 1;
+                    grid-row: 3;
+                    overflow: scroll;
+                    margin-bottom: 5px;
+                    max-height: 100%;
+                }
+
+                    .users-table table, th, td {
+                        border: 1px solid black;
+                        border-collapse: collapse;
+                    }
+                    
+                    .users-table table {
+                        width: 100%;
+                        font-size: 20px;
+                    }
+                    
+                    .users-table td {
+                        height: 30px;
+                        padding-left: 15px;
+                        padding-bottom: 10px;
+                        padding-top: 10px;
+                    }
+                    .users-table table thead td {
+                        border: double black;
+                        padding-left: 0;
+                        text-align: center;
+                    }
+
+
+                .views-graph {
+                    grid-row: 2;
+                    grid-column: 2;
+                    padding-left: 15px;
+                    padding-right: 15px;
+                    padding-bottom: 15px;
+                    padding-top: 15px;
+                    margin-left: 10px;
+                    border: double black;
+                }
+
+                .google-graph {
+                    grid-row: 3;
+                    grid-column: 2;
+                    padding-left: 15px;
+                    padding-right: 15px;
+                    padding-bottom: 15px;
+                    padding-top: 15px;
+                    margin-left: 10px;
+                    border: double black;
+                }
+                    .google-graph button {
+                        height: 50px;
+                        width: 200px;
+                        margin: 0;
+                        font-size: 15px;
+                        font-weight: bold;
+                        border: solid black 1px;
+                    }
+                    .authorize_button {
+                        background: coral;
+                        color: black;
+                    }
+                    .show-google-stats {
+                        background: lightskyblue;
+                        color: black;
+                    }
+        </style>
+    </head>
+    <body>
+        <div class='title'>
+            
+            <h1><a class='home_link' href='{{url_for("index")}}'>MYP 1080 <sup>o</sup></a> (Admins Analytics)</h1>
+        </div>
+        <div class='views-table'>
+            <table>
+                <thead>
+                    <tr>
+                        <td>WEEK</td>
+                        <td>VIEWS</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for x in view_dict.keys() %}
+                        <tr>
+                            <td>{{x}}</td>
+                            <td>{{view_dict[x]}}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        <div class="users-table">
+            <table>
+                <thead>
+                    <tr>
+                        <td>ID</td>
+                        <td>USERNAME</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for x in users_dict.keys() %}
+                        <tr>
+                            <td>{{x}}</td>
+                            <td>{{users_dict[x]}}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        <div class='views-graph' id='views-chart'>
+
+        </div>
+        <div class='google-graph' id='google-graph'>
+            <p id='p_tag' style='text-align: center'><button id='auth_button' class='authorize_button'>AUTHORIZE ACCOUNT</button></p>
+            <br>
+            <p id='auth_message' style="text-align: center; font-size: 20px; text-transform: capitalize; font-style: italic;">Authentication messages will appear here!</p>
+        </div>
+    </body>
+    <footer>
+        <script src="https://apis.google.com/js/api.js"></script>
+        <script>
+            // GOOGLE ANALYTICS AUTHENTICATION
+            function authenticate() {
+                return gapi.auth2.getAuthInstance()
+                    .signIn({scope: "https://www.googleapis.com/auth/webmasters https://www.googleapis.com/auth/webmasters.readonly"})
+                    .then(function() { document.getElementById('auth_message').innerHTML = "Please wait ................"; },
+                        function(err) { console.error(document.getElementById('auth_message').innerHTML = "Error with Sign-in", err); });
+            }
+            function loadClient() {
+                gapi.client.setApiKey("AIzaSyCd0lQ8gyduxFxjQM-snhPFzcu0NPcr38k");
+                return gapi.client.load("https://content.googleapis.com/discovery/v1/apis/webmasters/v3/rest")
+                    .then(function() { document.getElementById('auth_message').innerHTML = "PLEASE CLICK ABOVE BUTTON!" ; },
+                        function(err) { document.getElementById('auth_message').innerHTML = "Error loading GAPI client for API", err; });
+            }
+            // Make sure the client is loaded and sign-in is complete before calling this method.
+            function execute() {
+
+                let today = new Date();
+                let dd = String(today.getDate()).padStart(2, '0');
+                let mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+                let yyyy = today.getFullYear();
+
+                today = yyyy + '-' + mm + '-' + dd;
+                console.log(today);
+
+                return gapi.client.webmasters.searchanalytics.query({
+                "siteUrl": "https://myp-1080.herokuapp.com/",
+                "resource": {
+                    "startDate": "2020-05-01",
+                    "endDate": today,
+                    "dimensions": [
+                    "date"
+                    ]
+                }
+                })
+                    .then(function(response) {
+                            // Handle the results here (response.result has the parsed body).
+                            search_graph(response);
+                        },
+                        function(err) { console.error("Execute error", err); });
+            }
+            gapi.load("client:auth2", function() {
+                gapi.auth2.init({client_id: "745107738423-8m0opbq9u2c4i06sneaf7tbpt1532l02.apps.googleusercontent.com"});
+            });
+
+            iteration = 0;
+
+            var authorize_button = document.getElementById('auth_button');
+            authorize_button.onclick = function() {
+                if (iteration < 1) {
+                    authenticate().then(loadClient);
+                    document.getElementById('auth_button').className = 'show-google-stats';
+                    document.getElementById('auth_button').innerHTML = 'SHOW ANALYTICS';
+                    document.getElementById('auth_button').id = 'graph_button_google'
+                    iteration+=1
+                } else if (iteration === 1){
+                    if (document.getElementById('auth_message').innerHTML === 'PLEASE CLICK ABOVE BUTTON!') {
+                        iteration += 1;
+                        execute()
+                    } else {
+                        //pass
+                    }
+                    
+                } else {
+                    //pass
+                }
+            }
+            
+            // GOOGLE ANALYTICS GRAPHING
+            function search_graph(data) {
+                // Calling google graphs
+                google.charts.load('current', {'packages':['line']});
+                google.charts.setOnLoadCallback(drawLineGraph);
+
+                // Resetting div
+                document.getElementById('google-graph').innerHTML = '';
+                
+                search_data = data.result.rows
+
+                array_data = Array(search_data)[0];
+                console.log(array_data);
+                console.log(array_data.length)
+
+                final_data = []
+                for (let i = 0; i < array_data.length; i++) {
+                    final_data.push([new Date(array_data[i].keys[0]), array_data[i].clicks, array_data[i].impressions, array_data[i].ctr, array_data[i].position])
+                }
+                console.log(final_data)
+
+                
+                function drawLineGraph() {
+                    // SEARCH ANALYTICS GRAPH
+                    var data = new google.visualization.DataTable();
+                    data.addColumn('datetime', 'Date');
+                    data.addColumn('number', 'Clicks');
+                    data.addColumn('number', 'Impressions');
+                    data.addColumn('number', 'CTR');
+                    data.addColumn('number', 'Position');
+
+                    data.addRows(final_data);
+
+                    var options = {
+                        chart: {
+                        title: 'MYP 1080 Search Analytics',
+                        subtitle: 'Updated daily: Clicks, Impressions, CTR, Results Positions'
+                        },
+                    };
+                    var chart = new google.charts.Line(document.getElementsByClassName('google-graph')[0]);
+
+                    chart.draw(data, google.charts.Line.convertOptions(options));
+                }
+    
+
+            }
+            
+            // VIEWS GRAPH
+
+            views_list = JSON.parse(`{{view_graph_dict|safe}}`)
+
+            console.log(views_list);
+
+            google.charts.load('current', {packages: ['corechart', 'bar']});
+            google.charts.setOnLoadCallback(drawTopX);
+            
+            let views_keys = Object.keys(views_list);
+            let views_values = Object.values(views_list);
+
+            process_views = [];
+
+            for (let i = 0; i < views_keys.length; i++) {
+                process_views.push([views_keys[i],views_values[i]])
+            }
+            
+            console.log(process_views)
+
+            function drawTopX() {
+                var data = new google.visualization.DataTable();
+                data.addColumn('string', 'Week Range');
+                data.addColumn('number', 'Page Views');
+
+                data.addRows(process_views);
+
+                var options = {
+                    chart: {
+                        title: 'MYP 1080 Views Analytics',
+                        subtitle: 'Updated weekly'
+                        },
+                    axes: {
+                        x: {
+                            0: {side: 'bottom'}
+                        }
+                    },
+                };
+
+                var materialChart = new google.charts.Bar(document.getElementById('views-chart'));
+                materialChart.draw(data, options);
+                }
+        </script>        
+    </footer>
+</html>

@@ -1,0 +1,512 @@
+{% extends "layout.html" %}
+{% block body %}
+
+	<!-- Header -->
+		<header id="header">
+			<div class="logo"><a href="{{url_for('index')}}">MYP 1080<SUP>o</SUP></a></div>
+			<a href="#menu">Menu</a>
+		</header>
+
+	<!-- Nav -->
+	<nav id="menu">
+		<ul class="links">
+			<li><a href="{{url_for('index')}}">Home</a></li>
+			<li><a href="{{url_for('Humanities')}}">Individuals and Societies</a></li>
+			<li><a href="{{url_for('Sciences')}}">Sciences</a></li>
+			<li><a href="{{url_for('Math')}}">Math</a></li>
+			<li><a href="{{url_for('English')}}">English</a></li>
+			<li><a href="{{url_for('PersonalProject')}}">Personal Project</a></li>
+			<li><a href="{{url_for('EPortfolio')}}">E-Portfolio</a></li>
+			<li><a href="{{url_for('IDU')}}">IDU</a></li>
+			<li><a href="{{url_for('chat_index')}}">Chats</a></li>
+		</ul>
+	</nav>
+
+	<!-- One -->
+		<section id="One" class="wrapper style3">
+			<div class="inner">
+				<header class="align-center">
+					<p>MYP Subjects</p>
+					<h2>Mathematics</h2>
+				</header>
+			</div>
+		</section>
+
+	<!-- Two -->
+		<section id="two" class="wrapper style2" style="color: #000;">
+			<div class="inner">
+				<div class="box">
+					<div class="content">
+						<header class="align-center">
+						</header>
+<h2>Table of Contents</h2>
+<ol style="color: #000;">
+<a href="#physics"><li>Mathematics</li></a>
+<ul>
+	<a href="#intro_phy"><li>Introduction to MYP Math</li></a>
+	<a href="#phy_syllabus"><li>Math Syllabus</li></a>
+	<a href="#phy_questions"><li>Sample Questions and Answers</a></li>
+	<a href="#phy_downloads"><li>Downloadable Files</a></li>
+	</ul>
+</ol>
+
+<section>
+<h2 id="physics" style='text-align: center;'>---------------</h2>
+<h2 style="text-align: center;">MATHEMATICS</h2>
+<h3 id="intro_phy">INTRODUCTION</h3>
+<ul>
+    <li>Unlike the math done in other boards, MYP mathematics is an extremely conceptual and application based subject. Although there are a few direct questions, most of the questions are where the students have to utilise their mathematical knowledge and skills in a real life situation.</li>
+    <li>MYP math is offered in two levels, Regular and Enrichment.</li>
+    <li>The difference between the two, is that enrichment math has a few extra topics which regular math does not cover. In terms of the pace of the class, they are pretty much the same. Another difference, enrichment math questions are relatively harder, when compared to regular math questions. </li>
+    <li>Unfortunately there are not many resources online to practice math. The best way to practice MYP style questions, would be to do the questions provided by your teachers. </li>
+	<li>There are four criteria in math, and they are --> 
+		<ol>
+			<li>Criterion A: Knowing and Understanding </li>
+				<ul>
+				<li>This is the criteria where students will be tested purely on their mathematical knowledge and skills</li>
+				<li>In this criteria, questions are usually direct, thus of less marks</li>
+				<li>The questions are usually linked with the command terms such as identify, calculate, Show that and other similar terms </li>
+				</ul>
+			<li>Criterion B: Inquiring and Designing</li>
+				<ul>
+					<li>This is the criteria where students have to investigate using mathematical reasoning and knowledge and identify patterns in a real life scenario. </li>
+					<li>This criteria is usually paired with Criterion C: Communication, thus grading the students not only their mathematical reasoning and investigation, but also on the way they communicate their findings using appropriate calculations and justifications.</li>
+					<li>The questions in this criteria come with command terms such as write down, predict, determine, verify, and other similar terms. </li>
+				</ul>
+			<li>Criterion C: Processing and Evaluating </li>
+				<ul>
+					<li>This criteria is usually paired along with the other criteria</li>
+					<li>This is the aspect which assesses students on their mathematical reasoning and justification and how appropriate they are to the specific scenario and question. </li>
+				</ul>
+			<li>Criterion D: Reflecting on the Impact of Science</li>
+				<ul>
+					<li>This criteria, like criteria B, is where students are expected to use their mathematical reasoning and logic to solve real life problems or analyse contemporary problems.</li>
+					<li>This criteria too is paired with criterion C</li>
+					<li>Questions in this criteria are usually found with command terms like suggest, justify, determine, and other similar terms.</li>
+				</ul>
+		</ol>
+	<p>The best way to prepare for all of this is to simply practice problems from all the topics mentioned below.</p>
+
+</style>
+<h3 id="phy_syllabus">SYLLABUS</h3>
+<p>This is the math syllabus for your MYP e-assessments.  --> </p> <h4><strong style='color: orangered;'>Please note, the topics in orange, are only for enrichment math and not for regular math</strong></h4>
+<table class="syllabus-table" style="border: 1px solid #000">
+<thead>
+	<tr>
+		<th style='width: 40%; border: 1px solid #000; text-align: center;'>Topics</th>
+		<th style='width: 40%; border: 1px solid #000; text-align: center;'>Subtopics</th>
+	</tr>
+	<tr>
+		<td style="border: 1px solid #000; text-align: center;">Numbers</td>
+		<td style="border: 1px solid #000;">
+			<ul>
+				<li>Forms of numbers (integers, fractions, decimals, exponents, absolute values, standard form, scientific notation, rational and irrational numbers)</li>
+                <li>Number systems (integers, rational numbers, irrational numbers, real numbers)</li>
+                <li>Sets</li>
+                <li>Venn diagrams</li>
+                <li id='ext'>Integer exponents</li>
+                <li id='ext'>Fractional exponents </li>
+                <li id='ext'>Logarithms</li>
+                <li id='ext'>Number bases</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<td style="border: 1px solid #000; text-align: center;">Algebra</td>
+		<td style="border: 1px solid #000;">
+			<ul>
+				<li>Operations with algebraic terms</li>
+				<li>Factorization of algebraic terms
+                    Substitution</li>
+				<li>Algebraic fractions</li>
+				<li>Integer and fractional exponents</li>
+				<li>Patterns and sequences</li>
+				<li>Algorithms</li>
+                <li>Functions</li>
+                <ul>
+                    <li>Types of functions (linear, quadratic, exponential, sine and cosine)</li>
+                    <li>Domain and range</li>
+                    <li>Transformations</li>
+                </ul>
+				<li>Equations (linear, quadratic, simultaneous)</li>
+				<li>Inequalities (linear)</li>
+				<li id="ext">Logarithms with different base number (including natural logs)</li>
+                <li id="ext">Functions</li>
+
+                <ul id='ext'> 
+                    <li>Sine</li>
+                    <li>Cosine</li>
+                    <li>Logarithmic</li>
+                    <li>Rational</li>
+                    <li>Inverse and composite functions</li>
+                </ul>
+				<li id="ext">Quadratic inequalities (nonlinear inequalities) </li>
+                <li id="ext">Transformations of functions</li>
+                <li id="ext">Arithmetic and geometric series </li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<td style="border: 1px solid #000; text-align: center;">Geometry and Trigonometry</td>
+		<td style="border: 1px solid #000;">
+			<ul>
+				<li>Geometrical elements and their classification (point, line, plane, angle, regular and irregular planar figures, solids)</li>
+				<li>Distance formula</li>
+                <li>Angle properties</li>
+                <li>Triangle properties</li>
+                <li>Perimeter, area and volume Coordinate geometry</li>
+                <li>Trigonometric ratios in right angled triangles</li>
+                <li>Simple transformations of shapes, including isometric transformations</li>
+                <li>Circle geometry (sector area, arc length, area, circumference, circle theorems)</li>
+                <li id="ext">3D coordinate geometry</li>
+                <li id="ext">Similarity and congruency</li>
+                <li id="ext">Vectors</li>
+                <li id="ext">Sine and cosine rules</li>
+                <li id="ext">Trigonometric identities</li>
+                <ul id='ext'>
+                    <li>sin^2(x) + cos^2(x) = 1</li>
+                    <li>tan(x) = sin(x)/cos(x)</li>
+                </ul>
+                <li id="ext">Angle measures - degrees and radians </li>
+                <li id="ext">Unit circle</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<td style="border: 1px solid #000; text-align: center;">Statistics and Probability</td>
+		<td style="border: 1px solid #000;">
+			<ul>
+				<li>Graphical analysis and representation (pie charts, histograms, scatter plots, box and whisker plots)</li>
+				<li>Population sampling</li>
+				<li>Measures of central tendencies (mean, mode, median, quartiles, percentiles) for discrete and continuous data</li>
+				<li>Wave Phenomena - reflection, refraction, difraction, total internal reflection</li>
+				<li>Measures of dispersion (range, interquartile range) for discrete and continuous data</li>
+                <li>Probability of an event</li>
+                <li>Probability of independent, mutually exclusive and combined events</li>
+                <li>Probability of success trials</li>
+                <li>Probability using tree diagrams and venn diagrams</li>
+                <li id="ext">Standard deviation</li>
+                <li id="ext">Conditional probability</li>
+			</ul>
+		</td>
+	</tr>
+</thead>
+<style>
+    #ext {
+        color: orangered;
+        font-weight: 700;
+    }
+</style>
+</table>
+<h3 id="phy_questions">SAMPLE QUESTIONS</h3>
+<ol>
+<li type="none"><b>A.</b>
+    <img src="{{url_for('static', filename='images/mathqa.png')}}" alt="">
+</li>	
+<p></p>
+<button id="showans1" onclick="showans('ans1', this)">Show Answer A</button> <br>
+<div id="ans1" style="display: none; color:	#FF0000">
+<br>
+<ul>
+    <li type='none'>(12x^2 - 10x)/2</li>
+    <li type='none'>2(3x+4)-13</li>
+    <li type='none'>(3x)^2/x - (6x+10)/2</li>
+</ul>
+</div>
+<br>
+<li type="none"><b>B&C.</b>
+    <mark><br><em>B and C, because this question includes both criterions</em></mark>
+    <table id='math_table'>
+        <tbody>
+            <tr>
+                <td>Index</td>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+                <td>D</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>n</td>
+                <td>Coordinates C</td>
+                <td>Coordinates A</td>
+                <td>Coordinates Q</td>
+            </tr>
+            <tr>
+                
+            <td>2</td>
+            <td>1</td>
+            <td>(4,0)</td>
+            <td>(-4,0)</td>
+            <td>(2,3)</td>
+
+            </tr>
+            <tr>
+
+            <td>3</td>
+            <td>2</td>
+            <td>(6,0)</td>
+            <td>(-6,0)</td>
+            <td>(3,3)</td>
+            </tr>
+            <tr>
+
+                <td>4</td>
+                <td>3</td>
+                <td>(8,0)</td>
+                <td>(-8,0)</td>
+                <td>(4,3)</td>
+            </tr>
+            <tr>
+
+                <td>5</td>
+                <td>4</td>
+                <td>(10,0)</td>
+                <td>(-10,0)</td>
+                <td>(5,3)</td>
+
+            </tr>
+            <tr>
+                
+                <td>6</td>
+                <td>5</td>
+                <td>(12,0)</td>
+                <td>(-12,0)</td>
+                <td>(6,3)</td>
+
+            </tr>
+            <tr>
+
+                <td>7</td>
+                <td>6</td>
+                <td>(14,0)</td>
+                <td>(-14,0)</td>
+                <td>(7,3)</td>
+
+            </tr>
+        </tbody>
+    </table>
+    <style>
+        #math_table tr {
+            border: solid black;
+            border-width: 1px;
+        }
+
+        #math_table td {
+            border: solid black;
+            border-width: 1px;
+        }
+    </style>
+    <img width='70%'src="{{url_for('static', filename='images/mathqb.png')}}" alt="">
+</li>
+<br> 
+<button onclick="showans('ans2', this)">Show Answer B&C</button> <br>
+<div id="ans2" style="display: none; color:	#FF0000">
+    <br>
+    <table>
+    <tbody>
+        <tr>
+            <td>n</td>
+            <td>Length AQ</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>3√5</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>3√10</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>3√17</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>3√26</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>3√37</td>
+        </tr>
+    </tbody>
+    </table>
+    <p>As we can see in the above table, the values of length AQ follow a pattern. The coefficient of the root stays constant at 3, however, the value under the root changes. From this we can understand that the pattern is in the values under the root. The values under the root seem to be increasing by a difference which is increasing by a common difference of 2.</p>
+    <table>
+        <tbody>
+            <tr>
+                <td>n</td>
+                <td>Length AQ</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>3√5</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>3√10</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>3√17</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>3√26</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>3√37</td>
+            </tr>
+        </tbody>
+        </table>
+        <strong style="color: red">
+        <p>Difference 1 = 5 , 7 , 9 , 11 ...</p>
+        <p>Difference 2 = 2 , 2 , 2 ... </p>
+        </strong>
+        <table>
+            <tbody>
+                <tr>
+                    <td>2a = 2 <br>
+                        a = 1
+                        </td>
+                    <td>3a + b = 5 <br>
+                        3(1) + b= 5 <br>
+                        b = 2
+                        </td>
+                    <td>a + b + c = 5 <br>
+                        1 + 2+ c = 5 <br>
+                        c = 2 
+                        </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>∴ Length AQ = 3√n^2 + 2n + 2</p>
+        <p>To test the general rule, let us take the value n = 1. We know that when n = 1, the length AQ = 3√5</p>
+        <p>∴ Length AQ = 3√1^2 + 2(1) + 2</p>
+        <p>= 3√1 + 2 + 2</p>
+        <strong><p>= 3√5</p></strong>
+        <br>
+        <p>We get the same value, hence the rule has been tested.</p>
+        <p>To verify and justify the rule, let us take the value of n = 4. From the table we know that when n=4, AQ = 3√26</p>
+        <p>∴ Length AQ = 3√4^2 + 2(4) + 2</p>
+        <p>= 3√16 + 8 + 2</p>
+        <strong><p>= 3√26</p></strong>
+        <em><strong style='color: red;'><p>​Since we get the same value, the rule has been verified and proved to be valid.</p></strong></em>
+
+</div>
+<style>
+    #ans2 table tr{
+        border: solid red;
+        border-width: 1px;
+    }
+    #ans2 table td{
+        border: solid red;
+        border-width: 1px;
+    }
+    #ans2 table{
+        border: solid red;
+        border-width: 1px;
+    }
+</style>
+<br>
+<li type="none"><b>D.</b>  The maximum heart rate (H) in beats per minute (bpm) is calculated in terms of age, (a) in years using the formula H = 208 - 0.7a. A safe exercise is one that stays below the maximum heart rate.<br>
+<strong>Show that the maximum heart rate of a 16 year old is 197 bpm to the nearest beat.</strong>
+</li>
+<br>
+<button onclick="showans('ans4', this)">Show Answer D</button> <br>
+<div id="ans4" style="color: #FF0000; display: none;">
+<br>
+<p>ANSWER</p>
+<p>H = 208 - 0.7a</p>
+<p>= 208 - 0.7(16)</p>
+<p>= 208 - 11.2</p>
+<p>=196.8</p>
+<p>H = 197 bpm</p>
+
+</ol> 
+
+<h3 id="phy_downloads">DOWNLOADABLE FILES</h3>
+<table id='download_math'>
+    <thead>
+        <td>STANDARD MATH</td>
+        <td>ENRICHMENT (EXTENDED) MATH</td>
+    </thead>
+    <tbody>
+        <td>
+            <ul>
+                <li><a id="download" href="{{url_for('static', filename='subject_assets/downloads/revision/Gr 10 Math Standard - Revision booklet- Part 1 -2019-20.pdf')}}" download = "math_standard(part-1)_revision_booklet.pdf"><img id="icon" height="30px" width="25px" src="{{url_for('static', filename='images/pdf_logo.png')}}">Standard Math Revision - 1</a></li>
+                <li><a id="download" href="{{url_for('static', filename='subject_assets/downloads/revision/Gr 10 Math Standard - Revision booklet- Part 2 -2019-20.pdf')}}" download = "math_standard(part-2)_revision_booklet.pdf"><img id="icon" height="30px" width="25px" src="{{url_for('static', filename='images/pdf_logo.png')}}">Standard Math Revision - 2</a></li>
+                <li><a id="download" href="{{url_for('static', filename='subject_assets/downloads/revision/Gr 10 Math Standard - Revision booklet- Part 3 -2019-20.pdf')}}" download = "math_standard(part-3)_revision_booklet.pdf"><img id="icon" height="30px" width="25px" src="{{url_for('static', filename='images/pdf_logo.png')}}">Standard Math Revision - 3</a></li>
+                <li><a id="download" href="{{url_for('static', filename='subject_assets/downloads/revision/Gr 10 Math Standard -Revision booklet - Part 4 -2019-20.pdf')}}" download = "math_standard(part-4)_revision_booklet.pdf"><img id="icon" height="30px" width="25px" src="{{url_for('static', filename='images/pdf_logo.png')}}">Standard Math Revision - 4</a></li>
+                <li><a id="download" href="{{url_for('static', filename='subject_assets/downloads/revision/Gr 10 Math Standard-Revision Booklet - Part 4 - Answer Key.pdf')}}" download = "math_standard(part-4)_answer_key.pdf"><img id="icon" height="30px" width="25px" src="{{url_for('static', filename='images/pdf_logo.png')}}">Standard Math - 4 Answer Key</a></li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li><a id="download" href="{{url_for('static', filename='subject_assets/downloads/revision/Math Extended MYP Assessment Questions - Geometry _ Trig_Stats and Probobaility.pdf')}}" download = "math_ext(geometry, trig, stats, prob)_revision_booklet.pdf"><img id="icon" height="30px" width="25px" src="{{url_for('static', filename='images/pdf_logo.png')}}">Ext. Math Revision - Geometry, Trig, Stats & Probability</a></li>
+                <li><a id="download" href="{{url_for('static', filename='subject_assets/downloads/revision/REVISION BOOKLET_ MATH EXT_NUMBERS.pdf')}}" download = "math_ext(numbers)_revision_booklet.pdf"><img id="icon" height="30px" width="25px" src="{{url_for('static', filename='images/pdf_logo.png')}}">Ext. Math Revision- Numbers</a></li>
+                <li><a id="download" href="{{url_for('static', filename='subject_assets/downloads/revision/REVISION BOOKLET_geometry and trigonometry 1.pdf')}}" download = "math_ext(geometry & trig)_revision_booklet.pdf"><img id="icon" height="30px" width="25px" src="{{url_for('static', filename='images/pdf_logo.png')}}">Ext. Math Revision - Geometry & Trig</a></li>
+                <li><a id="download" href="{{url_for('static', filename='subject_assets/downloads/revision/REVISION BOOKLET_MATH EXT_ALGEBRA 1.pdf')}}" download = "math_ext(algebra 1)_revision_booklet.pdf"><img id="icon" height="30px" width="25px" src="{{url_for('static', filename='images/pdf_logo.png')}}">Ext. Math Revision - Algebra 1</a></li>
+                <li><a id="download" href="{{url_for('static', filename='subject_assets/downloads/revision/REVISION BOOKLET_MATH EXT_ALGEBRA 2.pdf')}}" download = "math_ext(algebra 2)_revision_booklet.pdf"><img id="icon" height="30px" width="25px" src="{{url_for('static', filename='images/pdf_logo.png')}}">Ext. Math Revision - Algebra 2</a></li>
+            </ul>
+        </td>
+    </tbody>
+</table>
+<style>
+    #download_math thead {
+        border: solid black;
+        border-width: 1px;
+    }
+    #download_math tr {
+        border: solid black;
+        border-width: 1px;
+    }
+    #download_math td {
+        border: solid black;
+        border-width: 1px;
+    }
+</style>
+
+</section>
+
+</section> <!--Everything should be above this seciton, else they go out of the border and the footer comes up -->
+
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+	<!-- Footer -->
+		<footer id="footer">
+			
+			<div class="copyright">
+				&copy; MYP1080
+			</div>
+		</footer>
+
+	<script type="text/javascript">
+		function showans(id_name, called){
+			var answer = document.getElementById(id_name);
+			if(answer.style.display === "none")
+			{
+				answer.style.display = "block";
+			}
+			else{
+				answer.style.display = "none";
+			};
+
+			if (String(called.innerHTML).includes('Show')) {
+				called.innerHTML = String(called.innerHTML).replace('Show', 'Hide');
+			} else if(String(called.innerHTML).includes('Hide')){
+				called.innerHTML = String(called.innerHTML).replace('Hide', 'Show')
+			};
+		};
+		
+		function color_mode(color) {
+			let colour_preference = String(color);
+		}
+	</script>
+
+{% endblock %}

@@ -1,0 +1,17 @@
+
+
+	.feature .image {
+		width: 48%;
+		float: left;
+	}
+
+	.feature .content {
+		width: 52%;
+		float: left;
+	}
+
+	.feature:after {
+		content: '';
+		display: block;
+		clear: both;
+	}

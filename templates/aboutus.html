@@ -1,0 +1,65 @@
+{% extends "layout_index.html" %}
+{% block body %}
+
+
+ <!-- Main -->
+  <section id="main" class="wrapper">
+   <div class="container">
+
+    <header class="major special">
+    <h2>How to Use the Application</h2>
+	 <p>More Details About the Application</p>
+	 <em><p>(CLICK ON LOGO TO RETURN HOME)</p></em>
+    </header>
+    <a href="{{url_for('index')}}" class="banner"><img class='banner_img'src="{{url_for('static', filename='images/logo.png')}}" height="320px" width="320px"  alt="" /></a>
+    <br><br>
+    <p>MYP1080 is a web application made for all the MYP students. The application has information regarding all the MYP subjects - individuals and societies, sciences, math and english - and all the course and project work - personal project, ePortfolios and IDU - thus making the application an amazingly detailed guide.</p>
+   
+    <p>The application has information regarding the personal projets, the IDU examination, the design, arts and second language eportfolios. The application provides th students with tips and strategies to help them prepare for the exams in a more organised and structured manner. We have also attached examplar files for students to refer to. There is content information regarding all the MYP subjects, including history, geography, math (both enrichment and regular), english,physics, chemistry, biology, and a few special subjects that are provided in a few schoo - economics and buissiness management. Studens are even provided with topic-wise tests for all subjects, so students can rewise their knowledge and practice MYP style questions. In order to ask the mentors questions, there is chat room section, with a room created for each subject and project course. Mentors and students can have collaborative discussions where mentors can address all the students' concerns/queries.</p>
+   
+    <p>In order to have the best experience, we advise you to access the application on a laptop and not on a tablet or mobile phone. Please refrain from sharing the information to students who have not registered onto the application. Do not misuse the chat rooms by posting irrelevant and inapropriate messages. In order to leave the chat room, please click on the "Leave" button and not by closing the tab. This will help prevent the application from crashing.</p>
+   
+    <p>For more information regarding how to use the application, please refer to the video attached above. </p>
+
+    <style>
+     .banner_img {
+      margin: 10px auto 20px;
+      display: block;
+     }
+    </style>
+   </div>
+  </section>
+
+ <!-- Footer -->
+  <footer id="footer">
+   <div class="inner">
+	<!--
+	<ul class="icons">
+     <li><a href="#" class="icon fa-facebook">
+      <span class="label">Facebook</span>
+     </a></li>
+     <li><a href="#" class="icon fa-twitter">
+      <span class="label">Twitter</span>
+     </a></li>
+     <li><a href="#" class="icon fa-instagram">
+      <span class="label">Instagram</span>
+     </a></li>
+     <li><a href="#" class="icon fa-linkedin">
+      <span class="label">LinkedIn</span>
+	 </a></li>
+	 </ul>
+	 -->
+    <ul class="copyright">
+     <li>&copy; MYP1080<sup>o</sup></li>
+    </ul>
+   </div>
+  </footer>
+
+ <!-- Scripts -->
+  <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+  <script type="text/javascript" src="{{ url_for('static' , filename='skel.min.js') }}"></script>
+  <script type="text/javascript" src="{{ url_for('static' , filename='util.js') }}"></script>
+  <script type="text/javascript" src="{{ url_for('static' , filename='jquery.min.js') }}"></script>
+  <script type="text/javascript" src="{{ url_for('static' , filename='main.js') }}"></script>
+
+{% endblock %}

@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>MYP1080 {{Subject}}</title>
+		<meta name='description' description='A comprehensive guide to the MYP {{Subject}}, with review packets, solved problems and ability to chat with mentors for free.'>
+		<meta charset="utf-8" />
+		<link rel='icon' href='{{url_for("static", filename="images/logo.png")}}'>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<script type="text/javascript" src="{{ url_for('static' , filename='skel.min.js') }}"></script>
+		<script type="text/javascript" src="{{ url_for('static' , filename='util.js') }}"></script>
+		<script type="text/javascript" src="{{ url_for('static' , filename='jquery.min.js') }}"></script>
+		<link rel="stylesheet" href="{{url_for('static', filename='subject.css')}}" />
+		<script type="text/javascript" src="{{ url_for('static' , filename='main.js') }}"></script>
+		
+		<!--<link rel="stylesheet" href="{{ url_for('static' , filename='main.css') }}" />-->
+		
+		<body class='subpage'>
+			{% block body %}
+			{% endblock %}
+		
+
+			<script src="{{url_for('static', filename='subject_assets/js/jquery.min.js')}}"></script>
+			<script src="{{url_for('static', filename='subject_assets/js/jquery.scrollex.min.js')}}"></script>
+			<script src="{{url_for('static', filename='subject_assets/js/skel.min.js')}}"></script>
+			<script src="{{url_for('static', filename='subject_assets/js/util.js')}}"></script>
+			<script src="{{url_for('static', filename='subject_assets/js/main.js')}}"></script>
+		</body>
+</html>
